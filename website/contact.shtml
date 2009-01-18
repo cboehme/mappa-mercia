@@ -1,0 +1,11 @@
+<!--#include virtual="style/textpage_header.shtml.inc"-->
+
+<h1>Contact</h1>
+<p>Community email contact<br>
+Press email contact<br>
+osm-gb-westmidlands Mailing List<br>
+Openstreetmap<br>
+Monthly Pub Meeting<br>
+</p>
+
+<!--#include virtual="style/textpage_footer.shtml.inc"-->

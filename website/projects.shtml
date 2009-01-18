@@ -1,0 +1,47 @@
+<!--#include virtual="style/textpage_header.shtml.inc"-->
+
+<h1>Projects</h1>
+
+<p>The streets of Birmingham are all mapped now but there are still plenty of things to do:
+</p>
+
+<ul>
+<li><a href="#canals">Mapping the Canals</a></li>
+<li><a href="#universities">Mapping the University Campuses</a></li>
+<li><a href="#blue_plaques">Adding all Blue Plaques</a></li>
+<li><a href="#buildings">Mapping and Improving Major Buildings</a></li>
+<li><a href="#footpaths">Mapping Footpaths</a></li>
+<li><a href="#busses">Adding Bus Routes and Bus Stops</a></li>
+<li><a href="#turn_restrictions">Entering Turn Restrictions</a></li>
+<li><a href="#postboxes">Adding Postboxes</a></li>
+<li><a href="#powerlines">Adding Powerlines</a></li>
+<li><a href="#redditch">Mapping Redditch</a></li>
+<li><a href="#bromsgrove">Mapping Bromsgrove</a></li>
+<li><a href="#black_country">Mapping the Black Country</a></li>
+</ul>
+
+<h2><a id="canals">Mapping the Canals</a></h2>
+
+<h2><a id="universities">Mapping the University Campuses</a></h2>
+
+<h2><a id="blue_plaques">Adding all Blue Plaques</a></h2>
+
+<h2><a id="buildings">Mapping and Improving Major Buildings</a></h2>
+
+<h2><a id="footpaths">Mapping Footpaths</a></h2>
+
+<h2><a id="busses">Adding Bus Routes and Bus Stops</a></h2>
+
+<h2><a id="turn_restrictions">Entering Turn Restrictions</a></h2>
+
+<h2><a id="postboxes">Adding Postboxes</a></h2>
+
+<h2><a id="powerlines">Adding Powerlines</a></h2>
+
+<h2><a id="redditch">Mapping Redditch</a></h2>
+
+<h2><a id="bromsgrove">Mapping Bromsgrove</a></h2>
+
+<h2><a id="black_country">Mapping the Black Country</a></h2>
+
+<!--#include virtual="style/textpage_footer.shtml.inc"-->

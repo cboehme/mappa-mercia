@@ -1,0 +1,26 @@
+<!--#include virtual="style/textpage_header.shtml.inc"-->
+
+<h1>About</h1>
+
+<p>Mappa Mercia is a group of people aiming to digitally remap the West Midlands in a free and open format. Our group is part 
+of a world-wide movement called openstreetmap.
+</p>
+
+<h2>What does Mappa Mercia mean?</h2>
+
+<p>The name Mappa Mercia is derived from two historical names which closely linked with the Midlands: 
+The <a href="http://en.wikipedia.org/wiki/Hereford_Mappa_Mundi" title="Wikipedia: Hereford Mappa Mundi">Hereford Mappa Mundi</a>  and the 
+ancient kingdom of <a href="http://en.wikipedia.org/wiki/Mercia" title="Wikipedia: Mercia">Mercia</a>. 
+</p>
+<p>Mappa Mundi is a general name for Medievial European maps of the world and the largest preserved of these 
+maps happens to be the Hereford Mappa Mundi from around 1300 which is on display in the Hereford Cathedral.
+</p>
+<p>The kings of Mercia reigned from the 5th to the 9th century over the area that we nowadays call the Midlands. 
+The <a href="http://en.wikipedia.org/wiki/Offa's_Dyke" title="Wikipedia: Offa's Dyke">Offa's Dyke</a> on the border of England and Wales is 
+probably the most famous relict of Mercia.
+</p>
+
+<p>So, Mappa Mercia basically means a Map of the Midlands. And that's what we want to create!
+</p>
+
+<!--#include virtual="style/textpage_footer.shtml.inc"-->
