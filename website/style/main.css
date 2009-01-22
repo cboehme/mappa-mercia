@@ -6,7 +6,7 @@ body
 
 	margin-left: 0px;
 	margin-right: 0px;
-	margin-top: 63px;
+	margin-top: 59px;
 	margin-bottom: 0px;
 
 	font-family: sans-serif;
@@ -14,11 +14,21 @@ body
 
 img  { border: none; }
 
+#header
+{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	height: 60px;
+}
+
 #header_map
 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
+	z-index: -1;
 }
 
 #header_title
@@ -30,7 +40,8 @@ img  { border: none; }
 
 ul#main_menu
 {
-	background-color: #6f7a8d;
+	background-image: url(/style/menu_background.png);
+	background-repeat: repeat-x;
 
 	margin: 0px;
 	margin-bottom: 15px;
@@ -173,7 +184,9 @@ h1, h2, h3
 	padding-top: 2px;
 	padding-bottom: 2px;
 	padding-left: 15px;
-	background-color: #e6e6e6;
+	/*background-color: #e6e6e6;*/
+	background-image: url(/style/footer_background.png);
+	background-repeat: repeat-x;
 	color: #6f6f6f;
 	font-size: x-small;
 }

@@ -1,16 +1,16 @@
 <!--#include virtual="style/mappage_header.shtml.inc"-->
 
 <div id="map">
-<noscript>
-	<div style="padding-left: 15px">
-		<h1>Javascript not found</h1>
+	<noscript>
+		<div style="padding-left: 15px">
+			<h1>Javascript not found</h1>
 
-		<p>I am sorry but the map requires Javascript.<br>
-		Your browser does not support Javascript or you have disabled it.<br>
-		Please enable it to view the map.
-		</p>
-	</div>
-</noscript>
+			<p>I am sorry but the map requires Javascript.<br>
+			Your browser does not support Javascript or you have disabled it.<br>
+			Please enable it to view the map.
+			</p>
+		</div>
+	</noscript>
 </div>
 
 <script src="/scripts/init_map.js" type="text/javascript"></script>
