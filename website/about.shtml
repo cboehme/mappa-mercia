@@ -1,4 +1,4 @@
-<!--#include virtual="style/textpage_header.shtml.inc"-->
+<!--#include virtual="style/header.shtml.inc"-->
 
 <h1>About</h1>
 
@@ -23,4 +23,4 @@ probably the most famous relict of Mercia.
 <p>So, Mappa Mercia basically means a Map of the Midlands. And that's what we want to create!
 </p>
 
-<!--#include virtual="style/textpage_footer.shtml.inc"-->
+<!--#include virtual="style/footer.html.inc"-->

@@ -1,0 +1,26 @@
+/*
+ * Page header
+ */
+
+#header  { height: 60px; }
+
+/*
+ * Page body
+ */
+
+#body
+{
+	width: 61%;
+
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 17px;
+	margin-bottom: 15px;
+
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+
+	border: 1px solid#d9d9d9;
+}

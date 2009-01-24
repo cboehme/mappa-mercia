@@ -3,10 +3,11 @@
 <html>
 <head>
 	<title>Mappa Mercia</title>
-	<link rel="stylesheet" href="/style/main.css" type="text/css">
-	<!--[if lt IE 7]>
-		<script src="/scripts/pngfix.js" type="text/javascript"></script>
-	<![endif]-->
+	<link rel="stylesheet" href="/style/base.css" type="text/css">
+	<link rel="stylesheet" href="/style/map.css" type="text/css">
+	<!--link rel="stylesheet" href="/style/default.css" type="text/css"-->
+	<!--[if IE 6]><script src="/scripts/ie6-fix.js" type="text/javascript"></script><![endif]-->
+	<!--[if IE 7]><script src="/scripts/ie7-fix.js" type="text/javascript"></script><![endif]-->
 </head>
 
 <body>
@@ -16,3 +17,5 @@
 	</div>
 
 	<!--#include virtual="../main_menu.html.inc"-->
+
+	<div id="body">

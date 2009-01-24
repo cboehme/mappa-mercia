@@ -1,4 +1,4 @@
-<!--#include virtual="style/textpage_header.shtml.inc"-->
+<!--#include virtual="style/header.shtml.inc"-->
 
 <h1>Projects</h1>
 
@@ -45,4 +45,4 @@ Example: <a href="http://www.&ouml;pnvkarte.de/?lon=16.354&lat=48.198&zoom=12" t
 
 <h2><a id="black_country">Mapping the Black Country</a></h2>
 
-<!--#include virtual="style/textpage_footer.shtml.inc"-->
+<!--#include virtual="style/footer.html.inc"-->

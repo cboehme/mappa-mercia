@@ -1,5 +1,5 @@
-<!--#include virtual="style/textpage_header.shtml.inc"-->
+<!--#include virtual="style/header.shtml.inc"-->
 
 <h1>Contribute!</h1>
 
-<!--#include virtual="style/textpage_footer.shtml.inc"-->
+<!--#include virtual="style/footer.html.inc"-->
