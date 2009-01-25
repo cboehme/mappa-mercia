@@ -40,28 +40,7 @@ ul#main_menu
 	right: 0px;
 	bottom: 17px;
 
-
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 12px;
-	margin-bottom: 10px;
-
-	padding: 0px;
-
-	border-top: 1px solid #d9d9d9;
-	border-bottom: 1px solid #d9d9d9;
-}
-
-#map
-{
-	position: absolute;
-	left: 15px;
-	right: 15px;
-	top: 10px;
-	bottom: 10px;
-
-	border: 1px solid black;
-	background-color: #cbced5;
+	margin: 10px;
 }
 
 /*
@@ -75,4 +54,99 @@ ul#main_menu
 	left: 0px;
 	right: 0px;
 	bottom: 0px;
+}
+
+
+/*
+ * Map specific styles
+ */
+
+#map
+{
+	position: absolute;
+
+	left: 250px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+
+	background-color: #cbced5;
+}
+
+#sidebar
+{
+	position: absolute;
+
+	left: 0px;
+	top: 0px;
+	bottom: 0px;
+
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	overflow: hidden;
+	
+	background-image: url(sidebar_background.png);
+	background-repeat: repeat-y;
+}
+
+.SidebarHidden
+{
+	width: 0px;
+
+	padding-left: 20px;
+	padding-right: 0px;
+
+	background-position: 10px 0px;
+}
+
+.SidebarVisible
+{
+	width: 210px;
+
+	padding-left: 25px;
+	padding-right: 25px;
+
+	background-position: 250px 0px;
+}
+
+#sidebar_toggle
+{
+	position: absolute;
+	
+	top: 3px;
+	right: 5px;
+
+	font-size: large;
+	font-weight: bold;
+}
+
+#sidebar_toggle:hover
+{
+	color: red;
+	cursor: pointer;
+}
+
+#sidebar h1  { font-size: x-large; }
+
+#sidebar h2  { font-size: large; }
+
+#sidebar h3  { font-size: medium; }
+
+/*
+ * OpenStreetbugs
+ */
+
+.olFramedCloudPopupContent
+{
+	padding: 10px;
+	overflow: auto;
+}
+
+.olControlPanel div
+{
+	margin-left: 60px;
+	margin-top: 10px;
+	width:  22px;
+	height: 22px;
 }

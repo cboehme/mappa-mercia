@@ -1,4 +1,4 @@
-<!--#include virtual="style/header.shtml.inc"-->
+<!--#include virtual="style/default_header.shtml.inc"-->
 
 <h1>Contact</h1>
 <p>Community email contact<br>
@@ -8,4 +8,4 @@ Openstreetmap<br>
 Monthly Pub Meeting<br>
 </p>
 
-<!--#include virtual="style/footer.html.inc"-->
+<!--#include virtual="style/default_footer.shtml.inc"-->

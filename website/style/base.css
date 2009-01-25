@@ -89,6 +89,8 @@ ul#main_menu li
 
 	z-index: 2;
 
+	border: 1px solid #d0d0d0;
+
 	background-color: #fcfcfc;
 }
 
@@ -106,7 +108,7 @@ ul#main_menu li
 #body a:visited:hover
 {
 	border-bottom: 1px solid #f0f0f0;
-	color: #ff0000;
+	color: red;
 }
 
 #body a:focus
@@ -173,21 +175,3 @@ ul#main_menu li
 #footer a:link:active,
 #footer a:visited:active
 	{ color: white; }
-
-/*
- * OpenStreetbugs
- */
-
-.olFramedCloudPopupContent
-{
-	padding: 10px;
-	overflow: auto;
-}
-
-.olControlPanel div
-{
-	margin-left: 60px;
-	margin-top: 10px;
-	width:  22px;
-	height: 22px;
-}
