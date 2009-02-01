@@ -163,7 +163,8 @@ function init_map(ev)
 		'controls': [
 			new OpenLayers.Control.MouseDefaults(),
 			new OpenLayers.Control.ScaleLine(),
-			new OpenLayers.Control.PanZoomBar()
+			new OpenLayers.Control.PanZoomBar(),
+			new OpenLayers.Control.ArgParser()
 		],
 		'maxResolution': 156543.0399,
 		'numZoomLevels': 20,
@@ -183,7 +184,8 @@ function init_map(ev)
 		loc.lon = v[1];
 		zoom = v[2];
 	}
-	map.setCenter(loc.clone().transform(new OpenLayers.Projection("EPSG:4326"), map.getProjectionObject()), zoom);
+	if(location.search == "")
+		map.setCenter(loc.clone().transform(new OpenLayers.Projection("EPSG:4326"), map.getProjectionObject()), zoom);
 
 	map.events.register('moveend', map, save_map_location);
 }

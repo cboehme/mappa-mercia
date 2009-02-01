@@ -1,0 +1,41 @@
+<!--#include virtual="style/default_header.shtml.inc"-->
+
+<h1>Use the Map</h1>
+
+<p>The Birmingham map can be used in many different ways. You can embed it into your own website or
+you can download the raw data and create your very own map of Birmingham, for example. There is 
+plenty of information about how to do these things on the Openstreetmap wiki. The links here provide 
+only some entry points into this documentation:
+
+<ul>
+	<li><a href="http://wiki.openstreetmap.org/wiki/OpenLayers_Simple_Example">Add the map to your website</a></li>
+	<li><a href="http://wiki.openstreetmap.org/wiki/Rendering">Create your own map</a></li>
+	<li><a href="http://wiki.openstreetmap.org/wiki/Deploying_your_own_Slippy_Map">Deploying your own slippy map</a></li>
+	<li><a href="http://wiki.openstreetmap.org/wiki/Planet.osm">Planet.osm: Download the raw data</a></li>
+</ul>
+
+<p class="SmallPrint">Openstreetmap data can be used freely under the terms of the 
+<a href="http://creativecommons.org/licenses/by-sa/2.0/">Creative Commons Attribution-ShareAlike 2.0</a>.
+This means (this isn't legal advice) basically you can do what you like 
+with the data, so long as you mention the original creator and the licence and anyone
+else can do the same with anything you produce. For more information you should refer to the 
+<a href="http://wiki.openstreetmap.org/wiki/Legal_FAQ">legal FAQ</a>.
+</p>
+
+<h2>Examples</h2>
+
+<p>Here are some examples of applications that people have created with data from Openstreetmap. Feel inspired!
+</p>
+
+<ul>
+	<li><a href="http://openpistemap.org/">OpenPisteMap</a>: Maps of pistes and ski lifts in ski resorts</li>
+	<li><a href="http://www.opencyclemap.org/">OpenCycleMap</a>: A map specially styled for the needs of cyclists</li>
+	<li><a href="http://www.stevechilton.pwp.blueyonder.co.uk/osm/tube/index.html">Tube Network Map</a>: A map of the London Tube</li>
+	<li><a href="http://whitewater.midden.org.uk/">Whitewater Maps</a>: Maps for kayakers</li>
+	<li><a href="http://www.openrouteservice.org/">OpenRouteService</a>: An online routing service for cars, pedestrians and bicycles</li>
+	<li><a href="http://wiki.openstreetmap.org/wiki/OSM_Map_On_Garmin">OSM Maps on Garmin</a>: Using OSM map data on Garmin GPS devices</li>
+	<li><a href="http://wiki.openstreetmap.org/wiki/Routing">Routing</a>: A list of application that use OSM data for routing</li>
+</ul>
+
+<!--#include virtual="style/default_footer.shtml.inc"-->
+

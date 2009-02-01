@@ -1,15 +1,18 @@
+- Write welcome text
 - Write project descriptions
-- Prepare links on the press page and prepare 
-  section where the press release will be placed
 - Write about section
-- Beautify contacts
 - Write contribute section
-- Collect links and put them on the links page
+- Birmingham render
+
+- Add favicon
 - Set cursor shapes for osb
 - Beautify popupboxes
+
 - Test with all browsers
 - Look into the zoom-in bug
 
 - Add Closebox to popups
 - Look at coordinate transformations
 - Look into the problem with the misplaced popups
+- When getting position from the url update the position cookie
+

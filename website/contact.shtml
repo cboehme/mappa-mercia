@@ -1,11 +1,38 @@
 <!--#include virtual="style/default_header.shtml.inc"-->
 
 <h1>Contact</h1>
-<p>Community email contact<br>
-Press email contact<br>
-osm-gb-westmidlands Mailing List<br>
-Openstreetmap<br>
-Monthly Pub Meeting<br>
+
+<p>If you have any questions about using this map or contributing to the map do not hesitate to contact us:
+<ul>
+	<li>Community contact: <a href="mailto:brian@mappa-mercia.org">brian@mappa-mercia.org</a></li>
+	<li>Press contact: <a href="mailto:andy@mappa-mercia.org">andy@mappa-mercia.org</a></li>
+</ul>
+
+<h2>Midlands OSM User Group</h2>
+
+<p>Mappa Mercia is a project of the <a href="http://wiki.openstreetmap.org/wiki/OSM_Midlands%2C_UK_User_Group">
+Midlands OSM User Group</a>. Most of our communication and coordination is taking 
+place on the <a href="http://lists.openstreetmap.org/listinfo/talk-gb-westmidlands">
+osm-gb-westmidlands mailing list</a> and on our wiki pages on the Openstreetmap website:
+</p>
+<ul>
+	<li><a href="http://lists.openstreetmap.org/listinfo/talk-gb-westmidlands">Mailing List</a></li>
+	<li><a href="http://wiki.openstreetmap.org/wiki/OSM_Midlands%2C_UK_User_Group">Midlands OSM User Group wiki page</a></li>
+	<li><a href="http://wiki.openstreetmap.org/wiki/Mappa_Mercia">Mappa Mercia wiki page</a></li>
+</ul>
+
+<h3>Monthly Group Meetings</h3>
+
+<p>The Midlands OSM User Group meets on the first Thursday of the month in the evening (around 7pm) in the 
+<a href="/map.shtml?lat=52.4836&lon=-1.9064&zoom=18" title="Show the Queens Arms on the map">Queens Arms</a> 
+in Birmingham Centre. Details about upcoming socials are published on the wiki page of the 
+<a href="http://wiki.openstreetmap.org/wiki/OSM_Midlands%2C_UK_User_Group">Midlands OSM User Group</a> 
+and on the <a href="http://lists.openstreetmap.org/listinfo/talk-gb-westmidlands">mailing list</a>.
+</p>
+<p>Newcomers are welcome! For more information please contact <a href="mailto:brian@mappa-mercia.org">brian@mappa-mercia.org</a>.
+</p>
+
+<p>
 </p>
 
 <!--#include virtual="style/default_footer.shtml.inc"-->

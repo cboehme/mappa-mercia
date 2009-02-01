@@ -131,6 +131,8 @@ ul#main_menu li
 	color: #176bc1;
 }
 
+p.SmallPrint  { font-size: small; }
+
 /*
  * Footer
  */

@@ -2,4 +2,180 @@
 
 <h1>Press</h1>
 
+<p>This page aims to provide information for journalists who are interested
+in Openstreetmap and Mappa Mercia.
+</p>
+
+<ul>
+	<li><a href="#press_release">Press release</a></li>
+	<li><a href="#birmingham_images">Images of the Birmingham map</a></li>
+	<li><a href="#further_information">Further Information</a></li>
+</ul>
+
+<h2><a href="press_release">Press Release</a></h2>
+
+<p>Another first for Birmingham! &ldquo;OpenStreetMap is a free editable map of the
+whole world. It is made by people like you.&rdquo; Today Birmingham takes a huge step
+to becoming a digital City. The metropolitan area of Birmingham and its
+environs within the motorway ring have now been completely digitally remapped
+by its own citizens in a format which is freely editable and available at
+<a href="http://www.openstreetmap.org/">www.openstreetmap.org</a>.
+</p>
+
+<p>It is the first English city to be completely remapped in this way. It joins
+the likes of Paris, Berlin and Canberra. Birmingham now has a digital map that
+is more up-to-date and accurate than all other online or satnav maps. Only
+Ordnance Survey can claim to be more accurate &ndash; and they have huge technical
+and financial resources at their disposal. (Click here for a detailed view of
+Birmingham)
+</p>
+
+<p>The OpenStreetMap of Birmingham has been created by local people, with
+local knowledge, who take pride in how their neighbourhood is represented and
+can match, and even surpass, the efforts of commercial mappers who spend
+millions creating this kind of rich data. A dedicated band of 100 volunteers
+has been collecting GPS data whilst cycling, walking, and riding the buses and
+trains. One of our team has even mapped by canal boat!
+</p>
+
+<p>The raw positional data is supplemented by additional visual observations
+on the ground and then edited into a format that can be rendered as a map
+readable by humans. All the software used in the project has been developed as
+open source software and is free to download and use. All participants have to
+do is invest their time and pay attention to detail.  &ldquo;It's very satisfying to
+see a complete city mapped in OpenStreetMap. Four years ago when this project
+was created we were looking at a blank screen and most commentators thought we
+were crazy.&rdquo; said Andy Robinson, secretary of the OpenStreetMap Foundation and
+a prolific mapper in the West Midlands.
+</p>
+
+<p>The Birmingham effort is part of a world wide movement to digitally remap
+the entire world which started in 2004. The project was originated in the UK
+and now involves some 85,000 enthusiasts globally, who have so far mapped
+almost 14 million miles of road globally. We have mapped 15,000 residential
+roads, 6,000 footpaths and 9,000 other roads in Birmingham (and over 700 bus
+stops and 300 pubs and 200 traffic lights and 300 postboxes)
+</p>
+
+<h3>Why re-map the world?</h3>
+
+<p>We need a free dataset for programmers, social activists, cartographers,
+and communities and the like to use geodata and create maps suited to their
+purposes without being limited by proprietary restrictions designed to protect
+large corporate investments in data collection. Under-developed countries are
+particularly helped by a project of this sort, because it is just not economic
+for commercial mappers to map their areas.
+</p>
+
+<p>How can it be accurate? The essence of a wiki-style process is that all
+users have a stake in having accurate data. If one person puts in inaccurate
+data, maliciously or accidentally, the other 99.9% of people can check it, fix
+it, or get rid of it. Just think how amazing it was a few years back when you
+saw Google Maps for the first time. Suddenly mapping was cool, and access via
+an API<a href="#footnote1" name="footnote1_ref">*</a> lead to a wave of
+innovation. Satnav was nowhere 3 years ago. Look at it now! But you still can't
+access the incredible amount of data locked behind the API and you can't add or
+improve it, so your applications are limited. Just think of the explosion of
+innovation, much of it in unexpected areas, that's possible when the data is
+freed!  </p>
+
+<p>All the software used in the project has been developed as opensource
+software and is free to download and use. The data and maps are licensed by
+Creative Commons which defines the spectrum of possibilities between full
+copyright &ndash; all rights reserved &ndash; and the public domain &ndash; 
+no rights reserved. What this means to users (and this isn't legal advice) is 
+basically you can do what you like with the data, so long as you mention the 
+original creator and the licence and anyone else can do the same with anything 
+you produce.
+</p>
+
+<p>A flagship example of the power of opening up access to geodata is
+OpenCycleMap. It’s a customised online map for cyclists, based on OpenStreetMap
+data. It shows things that are interesting to cyclists including signed cycle
+routes, offroad cycle paths, bike shops and bike parking &ndash; and of course hills
+&ndash; whilst diminishing other things like motorways that are of little interest.
+It's built on top of OpenStreetMap, and was recently commended by the British
+Cartographic Society.
+</p>
+
+<h3>So we've got a map, what's next?</h3>
+
+<ol>
+	<li>There's most of the Black Country to map for a start!</li>
+
+	<li>Local businesses and organisations can start using OSM maps and data,
+	rather than proprietary sources, freeing themselves from the technical,
+	financial and accuracy restrictions of commercial mapping providers.</li>
+	
+	<li><p>Now that we have a complete set of local data, Midlands software
+	developers can start using it to create novel applications (e.g road
+	traffic simulations, tourist trails, restaurant guides).
+	</p>
+
+	<p>Why would a business consider using OpenStreetMap data when anyone can
+	use maps from Google, Mapquest or Yahoo for free? In a word: control. An
+	OSM data and map user has significantly more control over their maps than
+	someone who uses a free API. With OSM you can modify, supplement and select
+	the data to create a customised map.
+	</p></li> 
+	
+	<li>It might take a 100 people to produce a map like this but we need a
+	1,000 to keep it up to date. Help us improve and verify the map via a
+	simple tool available at <a href="http://openstreetbugs.appspot.com/">openstreetbugs.appspot.com</a>. 
+	All you need is local knowledge and access to the internet.
+	</li>
+</ol>
+
+<p>For more information, individuals and community organisations can contact Brian Prangle 
+(Tel No <a href="mailto:brian@mappa-mercia.org">brian@mappa-mercia.org</a>).
+</p>
+
+<p>Press contact Andy Robinson (Tel No and <a href="mailto:andy@mappa-mercia.org">andy@mappa-mercia.org</a>).
+</p>
+
+<p>More information for editors can be found at:
+</p>
+
+<ul>
+	<li><a href="http://www.openstreetfoundation.org/">http://www.openstreetfoundation.org/</a></li>
+	<li><a href="http://wiki.openstreetmap.org/wiki/Main_Page">http://wiki.openstreetmap.org/wiki/Main_Page</a></li>
+	<li><a href="http://www.openstreetmap.org/">http://www.openstreetmap.org/</a></li>
+	<li><a href="http://www.flickr.com/photos/peterito/3054501076/in/pool-itomedia">http://www.flickr.com/photos/peterito/3054501076/in/pool-itomedia</a></li>
+	<li><a href="http://www.opencyclemap.org/">http://www.opencyclemap.org/</a></li>
+	<li><a href="http://www.mappa-mercia.org/">http://www.mappa-mercia.org/</a></li>
+</ul>
+
+<p class="SmallPrint"><a name="footnote1">*</a>API Application Programming
+Interface &ndash; a method by which commercial software developers
+&ldquo;open&rdquo; their software via a gateway to third parties whilst at the
+same time protecting their commercial intellectual property i.e you can &ldquo;hook&rdquo;
+into the software but you can't see the internal workings. [<a href="#footnote1_ref">Back</a>]
+</p>
+
+<h2><a name="birmingham_images">Images of the Birmingham Map</a></h2>
+
+<ul>
+	<li><a href="/press-images/birmingham.png">Birmingham (3.5MB)</a></li>
+	<li><a href="/press-images/birmingham-centre.png">Birmingahm City Centre (2.0MB)</a></li>
+	<li><a href="/press-images/sutton-coldfield.png">Sutton Coldfield (1.9MB)</a></li>
+	<li><a href="/press-images/bournville.png">Bournville (1.7MB)</a></li>
+	<li><a href="/press-images/spaghetti-junction.png">Spaghetti Junction (1.2MB)</a></li>
+	<li><a href="/press-images/birmingham-international.png">Birminham International Airport (840KB)</a></li>
+</ul>
+
+<p class="SmallPrint">Please read the <a href="http://wiki.openstreetmap.org/wiki/OpenStreetMap_License">Openstreetmap License</a>
+before publishing maps; we want everyone to know that they're free to copy, so you have to tell them when you publish.
+</p>
+
+<h2><a name="further_information">Further Information</a></h2>
+
+<p>The main Openstreetmap website has a large press section with background information about the project
+and with images suitable for press use: <a href="http://wiki.openstreetmap.org/wiki/Press">
+Openstreetmap press portal</a>.
+</p>
+
+<p>For further information please contact <a href="mailto:andy@mappa-mercia.org">
+andy@mappa-mercia.org</a>.
+</p>
+
 <!--#include virtual="style/default_footer.shtml.inc"-->
