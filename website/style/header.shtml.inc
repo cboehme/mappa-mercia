@@ -10,6 +10,7 @@
 
 	<!--#if expr="${PAGE_TYPE} == map"-->
 	<script src="http://openlayers.org/api/OpenLayers.js" type="text/javascript"></script>
+	<!--script src="/lib/OpenLayers.js" type="text/javascript"></script-->
 	<script src="http://www.openstreetmap.org/openlayers/OpenStreetMap.js" type="text/javascript"></script>
 	<script src="/scripts/map.js" type="text/javascript"></script>
 	<!--[if IE 6]><style type="text/css">#sidebar  { background-image: none; }</style><![endif]-->

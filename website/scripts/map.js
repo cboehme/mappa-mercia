@@ -1,14 +1,30 @@
 /*
  * Utility functions
  */
+
 function strip(str)
 {
 	return str.replace(/^\s+|\s+$/g, "");
 }
 
+/* This function is from openstreetbugs.appspot.com.
+ */
+function escape_html(str)
+{
+	if(!(str instanceof String))
+		str = str.toString();
+
+	str = str.replace(/&/g, "&amp;");
+	str = str.replace(/"/g, "&quot;");
+	str = str.replace(/</g, "&lt;");
+	str = str.replace(/>/g, "&gt;");
+	str = str.replace(/'/g, "&#146;");
+	return str;
+}
+
 function set_cookie(name, value)
 {
-	document.cookie = name+"="+value+";";
+	document.cookie = name+"="+escape(value)+";";
 }
 
 function get_cookie(name)
@@ -19,15 +35,17 @@ function get_cookie(name)
 		for (var i in cookies)
 		{
 			c = cookies[i].split("=");
-			if (strip(c[0]) == name) return strip(c[1]);
+			if (strip(c[0]) == name) return unescape(strip(c[1]));
 		}
 	}
 	return null;
 }
 
+
 /* 
  * Run on load 
  */
+
 function run_on_load(func)
 { 
 	if(run_on_load.loaded) func();
@@ -58,20 +76,24 @@ else if (window.attachEvent)
 else
 	window.onload = run_on_load.run;
 
+
 /*
  * Sidebar
  */
+
 function toggle_sidebar()
 {
 	var sidebar = document.getElementById("sidebar");
 	var sidebar_toggle = document.getElementById("sidebar_toggle");
-	var map = document.getElementById("map");
+	var map_div = document.getElementById("map");
 
 	if (sidebar.className == "SidebarVisible")
 	{
 		sidebar.className = "SidebarHidden";
 		sidebar_toggle.firstChild.replaceData(0, 1, "\u00bb");
-		map.style.left = "10px"; 
+		map_div.style.left = "10px"; 
+		if(map)
+			map.pan(-120, 0, {animate: false});
 
 		set_cookie("sidebar", "hidden");
 	}
@@ -79,7 +101,9 @@ function toggle_sidebar()
 	{
 		sidebar.className = "SidebarVisible";
 		sidebar_toggle.firstChild.replaceData(0, 1, "\u00ab");
-		map.style.left = "250px"; 
+		map_div.style.left = "250px"; 
+		if(map)
+			map.pan(120, 0, {animate: false});
 
 		set_cookie("sidebar", "visible");
 	}
@@ -93,7 +117,7 @@ function toggle_sidebar()
 		correct_dimensions();
 }
 
-function init_sidebar(event)
+function init_sidebar(ev)
 {
 	if (get_cookie("sidebar") == "hidden")
 		toggle_sidebar();
@@ -106,9 +130,11 @@ function init_sidebar(event)
 
 run_on_load(init_sidebar);
 
+
 /*
  * Map
  */
+
 var map = null;
 
 function save_map_location()
@@ -124,7 +150,7 @@ function save_map_location()
 	set_cookie("map_location", loc.lat+":"+loc.lon+":"+zoom);
 }
 
-function init_map(event)
+function init_map(ev)
 {
 	var mapnik = new OpenLayers.Layer.OSM.Mapnik("OpenStreetMap", {
 		'isBaseLayer': true,
@@ -164,25 +190,33 @@ function init_map(event)
 
 run_on_load(init_map);
 
+
 /*
  * Openstreetbugs
  *
  * This is a customized version of the Javascript from
  * http://openstreetbugs.appspot.com/ .
  */
-var osb_layer = null;
 
+var osb_layer = null;
+var osb_bugs = new Array();
+var state = 0;
+var current_feature = null;
+
+/* Call this method to add an openstreetbugs layer to 
+ * the map.
+ */
 function openstreetbugs()
 {
 	run_on_load(init_openstreetbugs);
 }
 
-function init_openstreetbugs(event)
+function init_openstreetbugs(ev)
 {
 	osb_layer = new OpenLayers.Layer.Markers("OpenStreetBugs");
 	osb_layer.setOpacity(0.7);
 
-	map.addLayers([osb_layer]);
+	map.addLayer(osb_layer);
 
 	map.events.register('moveend', map, refresh_osb);
 
@@ -191,6 +225,19 @@ function init_openstreetbugs(event)
 	click.activate();
 
 	refresh_osb();
+
+	/* TODO: Can't we do this with css alone? 
+	 * #map { cursor: crosshair; }
+	function mapOver()
+	{
+		document.body.style.cursor='crosshair';
+	}
+
+	function mapOut()
+	{
+		document.body.style.cursor='auto';
+	}
+	*/
 }
 
 function plusfacteur(a) { return a * (20037508.34 / 180); }
@@ -201,46 +248,78 @@ function x2lon(a) { return moinsfacteur(a); }
 function lon2x(a) { return plusfacteur(a); }
 function lonLatToMercator(ll) { return new OpenLayers.LonLat(lon2x(ll.lon), lat2y(ll.lat)); }
 
-function encodeMyHtml(str)
+/*
+ * html contents of the popups
+ */
+function popup_open_bug(bug_or_id)
 {
-	if(typeof(str)!="string")
-		str = str.toString();
+	bug = bug_or_id instanceof Object ? bug_or_id : get_bug(bug_or_id);
 
-	str = str.replace(/&/g, "&amp;") ;
-	str = str.replace(/"/g, "&quot;") ;
-	str = str.replace(/</g, "&lt;") ;
-	str = str.replace(/>/g, "&gt;") ;
-	str = str.replace(/'/g, "&#146;") ;
-	return str;
+	return "<div>"+bug.text+"</div><div><br><a href='#' onclick='add_comment("+bug.id+"); return false;'>Add comment</a><br><a href='http://www.openstreetmap.org/edit?lat="+bug.lat+"&lon="+bug.lon+"&zoom=17' target='_blank'>Edit in Potlatch</a><br><a href='#' onclick='close_bug("+bug.id+"); return false;'>Close bug</a></div>";
 }
 
-//----------- AJAX Tools --------------
-
-//--- Remote Javascript ---
-function makeRequest(sUrl, oParams)
+function popup_closed_bug(bug_or_id)
 {
-	sUrl = "http://openstreetbugs.appspot.com/"+sUrl;
-	for (sName in oParams)
+	bug = bug_or_id instanceof Object ? bug_or_id : get_bug(bug_or_id);
+
+	return "<div>"+bug.text+"</div>";
+}
+
+function popup_add_bug(x, y, nickname)
+{
+	return "<form><input type='hidden' name='lon' value='"+x2lon(x)+"'><input type='hidden' name='lat' value='"+y2lat(y)+"'>Description: <input type='text' id='description' name='text'><br>Nickname: <input type='text' id='nickname' value='"+(nickname ? nickname : "NoName")+"'><br><input type='button' value='OK' onclick='add_bug_submit(this.form);'><input type='button' value='Cancel' onclick='add_bug_cancel();'></form>";
+}
+
+function popup_add_comment(bug_or_id, nickname)
+{
+	bug = bug_or_id instanceof Object ? bug_or_id : get_bug(bug_or_id);
+
+	return "<div>"+bug.text+"</div><form id='edit'><input type='hidden' name='id' value='"+bug.id+"'><input type='text' id='comment' name='text'><br>Nickname: <input type='text' id='nickname' value='"+(nickname ? nickname : "NoName")+"'><br><input type='button' value='OK' onclick='add_comment_submit("+bug.id+", this.form);'><input type='button' value='Cancel' onclick='reset_popup("+bug.id+");'></form>";
+}
+
+function popup_close_bug(bug_or_id)
+{
+	bug = bug_or_id instanceof Object ? bug_or_id : get_bug(bug_or_id);
+
+	return "<div>"+bug.text+"</div><br><div class='alert'>Do you really want to close this bug?<br>The bug will be deleted after a week.</div><form><input type='hidden' name='id' value='"+bug.id+"'><input type='button' value='Yes' onclick='close_bug_submit("+bug.id+", this.form);'><input type='button' value='No' onclick='reset_popup("+bug.id+");'></form>"
+}
+
+/*
+ * AJAX functions
+ */
+function make_request(url, params)
+{
+	url = "http://openstreetbugs.appspot.com/"+url;
+	for (var name in params)
 	{
-		if (sUrl.indexOf("?") > -1)
-		{
-			sUrl += "&";
-		}
-		else
-		{
-			sUrl += "?";
-		}
-		sUrl += encodeURIComponent(sName) + "=" + encodeURIComponent(oParams[sName]);
+		url += (url.indexOf("?") > -1) ? "&" : "?";
+		url += encodeURIComponent(name) + "=" + encodeURIComponent(params[name]);
 	}
 
-	var oScript = document.createElement("script");
-	oScript.src = sUrl;
-	document.body.appendChild(oScript);
+	var script = document.createElement("script");
+	script.src = url;
+	document.body.appendChild(script);
 }
 
-//--- Post Form ---
+/* This method is called from the scripts that are returned 
+ * on make_request calls.
+ */
+function putAJAXMarker(id, lon, lat, text, type)
+{
+	if (!bug_exist(id))
+	{
+		var bug = {id: id, text: text, lat: lat, lon: lon, type: type, feature: null};
 
-function getFormValues(fobj)
+		if (bug.type == 0)
+			bug.feature = create_feature(lon2x(lon), lat2y(lat), popup_open_bug(bug), type);
+		else
+			bug.feature = create_feature(lon2x(lon), lat2y(lat), popup_closed_bug(bug), type);
+ 		
+		osb_bugs.push(bug);
+	}
+}
+
+function get_form_values(fobj)
 {
 	var str = "";
 	var valueArr = null;
@@ -248,7 +327,7 @@ function getFormValues(fobj)
 	var cmd = "";
 	for (var i = 0;i < fobj.elements.length;i++)
 	{
-		switch(fobj.elements[i].type)
+		switch (fobj.elements[i].type)
 		{
 			case "text":
 			case "textarea":
@@ -264,44 +343,33 @@ function getFormValues(fobj)
 	return str;
 }
 
-var xmlReq = null;
-
-function submitForm(f, url)
+function submit_form(f, url)
 {
-	url = "http://openstreetbugs.appspot.com/"+url;
-	var str = getFormValues(f);
-	getXML(url,str);
+	url = "/osb-proxy/"+url;
+	var str = get_form_values(f);
+	get_xml(url, str);
 }
 
-function displayState()
-{}
-
-function getXML(url,str)
+function get_xml(url, str)
 {
-	var doc = null
 	var xhr;
-	try { xhr = new ActiveXObject('Msxml2.XMLHTTP'); }
+	try  { xhr = new ActiveXObject('Msxml2.XMLHTTP'); }
 	catch (e)
 	{
-		try { xhr = new ActiveXObject('Microsoft.XMLHTTP'); }
+		try  { xhr = new ActiveXObject('Microsoft.XMLHTTP'); }
 		catch (e2)
 		{
-			try { xhr = new XMLHttpRequest(); }
-			catch (e3) { xhr = false; }
+			try  { xhr = new XMLHttpRequest(); }
+			catch (e3)  { xhr = false; }
 		}
 	}
+
 	xhr.onreadystatechange = function()
 	{
 		if(xhr.readyState == 4)
 		{
-			if(xhr.status == 200)
-			{
-				//ok
-			}
-			else
-			{
-				//error
-			}
+			if(xhr.status == 200)  { /*OK*/ }
+			else  { /*error*/ }
 		}
 	};
 
@@ -310,9 +378,9 @@ function getXML(url,str)
 	xhr.send(str);
 }
 
-//==================================================================
-//------------------------ Markers management ----------------------
-
+/*
+ * Bug management
+ */
 function refresh_osb()
 {
 	bounds = map.getExtent().toArray();
@@ -320,388 +388,239 @@ function refresh_osb()
 	t = y2lat(bounds[3]);
 	l = x2lon(bounds[0]);
 	r = x2lon(bounds[2])
-	var oParams = { "b": b, "t": t, "l": l, "r": r };
-	makeRequest("/getBugs", oParams);
+	var params = { "b": b, "t": t, "l": l, "r": r };
+	make_request("/getBugs", params);
 }
 
-var markers = new Array();
-
-function markerExist(id)
+function bug_exist(id)
 {
-	for (var i = 0; i < markers.length; i++)
+	for (var i in osb_bugs)
 	{
-		if (markers[i][0] == id) 
+		if (osb_bugs[i].id == id) 
 			return true;
 	}
 	return false;
 }
 
-// getMarker(id)[j] -> 1:text / 2:lat / 3:lon / 4:markertype
-function getMarker(id)
+function get_bug(id)
 {
-	for (var i = 0; i < markers.length; i++)
+	for (var i in osb_bugs)
 	{
-    if (markers[i][0] == id)
-		return markers[i];
+	    if (osb_bugs[i].id == id)
+			return osb_bugs[i];
 	}
 	return '';
 }
 
-function getMarkerText(id)
+/* This function creates a feature and adds a corresponding 
+ * marker to the map.
+ */
+function create_feature(x, y, popup_content, type)
 {
-	for (var i = 0; i < markers.length; i++)
+	if(!create_feature.open_bug_icon)
 	{
-		if (markers[i][0] == id)
-			return markers[i][1];
+		icon_size = new OpenLayers.Size(22, 22);
+		icon_offset = new OpenLayers.Pixel(-icon_size.w/2, -icon_size.h/2);
+		create_feature.open_bug_icon = new OpenLayers.Icon('/style/open_bug_marker.png', icon_size, icon_offset);
+		create_feature.closed_bug_icon = new OpenLayers.Icon('/style/closed_bug_marker.png', icon_size, icon_offset);
 	}
-	return '';
-}
 
-function getMarkerlat(id)
-{
-	for (var i = 0; i < markers.length; i++)
-	{
-    	if (markers[i][0] == id)
-			return markers[i][2];
-	}
-	return '';
-}
-
-function getMarkerlon(id)
-{
-	for (var i = 0; i < markers.length; i++)
-	{
-		if (markers[i][0] == id)
-			return markers[i][3];
-	}
-	return '';
-}
-
-function putAJAXMarker(id, lon, lat, markerText, marktype)
-{
-	if (!markerExist(id))
-	{
- 		markers.push(new Array(id, markerText, lat, lon, marktype));
-		if (marktype == 0)
-		{
-			putMarker(lon2x(lon), lat2y(lat), "<div>"+markerText+"</div><div><br/><a href='#' onclick='editPopup("+id+"); return false;'>Add comment</a><br/><a href='http://www.openstreetmap.org/edit?lat="+lat+"&lon="+lon+"&zoom=17' target='_blank'>Edit in Potlatch</a><br/><a href='#' onclick='delMarker("+id+"); return false;'>Close mark</a></div>", marktype);
-    	}
-		else
-		{
-			putMarker(lon2x(lon), lat2y(lat), "<div>"+markerText+"</div><!--<div><br/><a href='#' onclick='editPopup("+id+"); return false;'>Add comment</a></div>-->", marktype);
-		}
-	}
-}
-
-var currentPopup;
-var currentFeature;
-var clicked = false;
-
-function showPop(feature)
-{
-	if (currentPopup != null)
-	{
-		currentPopup.hide();
-	}
-	if (feature.popup == null)
-	{
-		feature.popup = feature.createPopup();
-		map.addPopup(feature.popup);
-	}
-	else
-	{
-		feature.popup.toggle();
-	}
-	currentPopup = feature.popup;
-}
-
-var size = new OpenLayers.Size(22,22);
-var offset = new OpenLayers.Pixel(-(size.w/2), -(size.h/2));
-var icon_error = new OpenLayers.Icon('/style/osb_error.png',size,offset);
-var icon_valid = new OpenLayers.Icon('/style/osb_fixed.png',size,offset);
-
-function putMarker(x, y, popupContent, marktype)
-{
-	var iconclone;
-	if (marktype == 0)
-	{
-		iconclone = icon_error.clone();
-	}
-	else if (marktype == 1)
-	{
-		iconclone = icon_valid.clone();
-	}
-	else
-	{
-		iconclone = icon_error.clone();
-	}
-	var feature = new OpenLayers.Feature(markers, new OpenLayers.LonLat(x, y), {icon:iconclone});
-	feature.closeBox = false;
+	var icon = !type ? create_feature.open_bug_icon.clone() : create_feature.closed_bug_icon.clone();
+	var feature = new OpenLayers.Feature(osb_layer, new OpenLayers.LonLat(x, y), {icon: icon});
 	feature.popupClass = OpenLayers.Class(OpenLayers.Popup.FramedCloud);
-	feature.data.popupContentHTML = popupContent;
-	feature.data.overflow = "hidden";
-	var marker = feature.createMarker();
-	var markerClick = function (evt)
-	{
-		currentFeature = this;
-		if (clicked)
-		{
-			if (currentPopup == this.popup)
-			{
-				this.popup.hide();
-				clicked = false;
-			}
-			else
-			{
-				currentPopup.hide();
-				showPop(this);
-			}
-		}
-		else
-		{
-			showPop(this);
-			clicked = true;
-		}
-		OpenLayers.Event.stop(evt);
-	};
-	var markerOver = function (evt)
-	{
-		document.body.style.cursor='pointer';
-		if (!clicked)
-			showPop(this);
-		OpenLayers.Event.stop(evt);
-	};
-	var markerOut = function (evt)
-	{
-		document.body.style.cursor='crosshair';
-		if (!clicked && currentPopup != null)
-			currentPopup.hide();
-		OpenLayers.Event.stop(evt);
-	};
-	marker.events.register("mousedown", feature, markerClick);
-	marker.events.register("mouseover", feature, markerOver);
-	marker.events.register("mouseout", feature, markerOut);
+	feature.data.popupContentHTML = popup_content;
 
-	osb_layer.addMarker(marker);
+	create_marker(feature);
+
 	return feature;
 }
 
-function resetMarker(id)
+function create_marker(feature)
 {
-	var mark = getMarker(id);
-	var mark_text = mark[1];
-	var mark_lat = mark[2];
-	var mark_lon = mark[3];
-	var mark_type = mark[4];
-	if (mark_type == 0)
+	var marker = feature.createMarker();
+	var marker_click = function (ev)
 	{
-		currentPopup.setContentHTML("<div>"+mark_text+"</div><div><br/><a href='#' onclick='editPopup("+id+"); return false;'>Add comment</a><br /><a href='http://www.openstreetmap.org/edit?lat="+mark_lat+"&lon="+mark_lon+"&zoom=17' target='_blank'>Edit in Potlatch</a><br /><a href='#' onclick='delMarker("+id+"); return false;'>Close mark</a></div>");
-	}
-	else
-	{
-		currentPopup.setContentHTML("<div>"+mark_text+"</div><!--<div><br/><a href='#' onclick='editPopup("+id+"); return false;'>Add comment</a></div>-->");
-	}
-}
-
-//--------------- add mark ------------
-//
-var tempFeature;
-
-function putNewMarker(x, y)
-{
-	if(tempFeature) return;
-	tempFeature = putMarker(x, y, "<form><input type='hidden' name='lon' value='"+x2lon(x)+"' /><input type='hidden' name='lat' value='"+y2lat(y)+"' />Description: <input type='text' id='addTextBox"+x+":"+y+"' name='text' onKeyPress='addMarkerCheckEnter(event, this.form);' /><br/>Nickname: <input type='text' name='nickname'/><br><input type='button' value='ok' onclick='addMarkerSubmit(this.form);' /><input type='button' value='cancel' onclick='cancelAddMarker();' /></form>", 0);
-	clicked = true;
-	showPop(tempFeature);
-	document.getElementById('addTextBox'+x+':'+y).focus();
-}
-
-function addMarkerCheckEnter(ev, form)
-{
-	ev=ev||event;
-	if (ev)
-	{
-		if(ev.keyCode==13)
+		if(state == 0)
 		{
-			addMarkerSubmit(form);
-			return false;
+			this.createPopup();
+			map.addPopup(this.popup);
+			state = 1;
+			current_feature = this;
 		}
-	}
-	return true;
-}
-
-function addMarkerSubmit(form)
-{
-	form.text.value = form.text.value + " ["+ document.getElementById('nickname').value + "]";
-	submitForm(form, "addPOIexec");
-	osb_layer.removeMarker(tempFeature.marker);
-	tempFeature.popup.destroy();
-	tempFeature.marker.destroy();
-	tempFeature = null;
-	currentPopup = null;
-	clicked = false;
-	setTimeout("refresh_osb()", 2000);
-}
-
-function cancelAddMarker()
-{
-	osb_layer.removeMarker(tempFeature.marker);
-	tempFeature.popup.destroy();
-	tempFeature.marker.destroy();
-	tempFeature = null;
-	currentPopup = null;
-	clicked = false;
-}
-
-//------------ add comment ------------
-
-function editPopup(id)
-{
-	currentPopup.setContentHTML("<div>"+getMarkerText(id)+"</div><form id='edit'><input type='hidden' name='id' value='"+id+"' /><input type='text' id='editBox"+id+"' name='text' onKeyPress='editPopupCheckEnter(event, "+id+", this.form);'/><br /><input type='button' value='ok' onclick='editPopupSubmit("+id+", this.form);' /><input type='button' value='cancel' onclick='editPopupCancel("+id+");' /></form>");
-	document.getElementById('editBox'+id).focus();
-}
-
-function editPopupCheckEnter(ev, id, form)
-{
-	ev=ev||event;
-	if (ev)
-	{
-		if(ev.keyCode==13)
+		else if(state == 1 && current_feature == this)
 		{
-			editPopupSubmit(id, form);
- 			return false;
+			map.removePopup(this.popup)
+			state = 0;
+			current_feature = null;
 		}
-	}
-	return true;
-}
-
-function editPopupSubmit(id, form)
-{
-	form.text.value = form.text.value + " ["+ document.getElementById('nickname').value +"]";
-	submitForm(form, "editPOIexec");
-	var str = encodeMyHtml(form.text.value);
-	for (var i = 0; i < markers.length; i++)
+		OpenLayers.Event.stop(ev);
+	};
+	var marker_mouseover = function (ev)
 	{
-		if (markers[i][0] == id)
+		//TODO: Style-sheets?  document.body.style.cursor='pointer';
+		if(state == 0)
 		{
-			str = markers[i][1] + "<hr />" + str;
-			markers[i][1] = str;
-			break;
+			this.createPopup();
+			map.addPopup(this.popup)
 		}
-	}
-	resetMarker(id);
-}
-
-function editPopupCancel(id)
-{
-	resetMarker(id);
-}
-
-//----------- close mark -----------
-//
-function delMarker(id)
-{
-	currentPopup.setContentHTML("<div>"+getMarkerText(id)+"</div><br/><div class='alert'>Do you really want to close this marker ?<br/>The marker will be deleted after a week.</div><form><input type='hidden' name='id' value='"+id+"' /><input type='button' value='yes' onclick='delMarkerSubmit("+id+", this.form);' /><input type='button' value='cancel' onclick='delMarkerCancel("+id+");' /></form>");
-}
-
-function delMarkerSubmit(id, form)
-{
-	submitForm(form, "closePOIexec");
-	osb_layer.removeMarker(currentFeature.marker);
-	currentFeature.popup.destroy();
-	currentFeature.marker.destroy();
-	currentFeature = null;
-	currentPopup = null;
-	clicked = false;
-	for (var i = 0; i < markers.length; i++)
+		OpenLayers.Event.stop(ev);
+	};
+	var marker_mouseout = function (ev)
 	{
-    	if (markers[i][0] == id)
-		{
-			markers[i][0] = -1;
-			break;
-		}
-	}
-	setTimeout("refresh_osb()", 2000);
+		//TODO: Style-sheets?  document.body.style.cursor='crosshair';
+		if(state == 0)
+			map.removePopup(this.popup);
+		OpenLayers.Event.stop(ev);
+	};
+	/* marker_click must be registered as click and not as mousedown!
+	 * Otherwise a click event will be propagated to the click control
+	 * of the map under certain conditions.
+	 */
+	marker.events.register("click", feature, marker_click);
+	marker.events.register("mouseover", feature, marker_mouseover);
+	marker.events.register("mouseout", feature, marker_mouseout);
+
+	osb_layer.addMarker(marker);
 }
 
-function delMarkerCancel(id)
-{
-	resetMarker(id);
-}
-
-/* ------------ curseur et clic sur carte -------------- */
-
-function mapOver()
-{
-	document.body.style.cursor='crosshair';
-}
-
-function mapOut()
-{
-	document.body.style.cursor='auto';
-}
-
+/*
+ * Control to handle clicks on the map
+ */
 OpenLayers.Control.Click = OpenLayers.Class(OpenLayers.Control, {
-	defaultHandlerOptions: {
+
+	initialize: function() {
+		OpenLayers.Control.prototype.initialize.apply(this, arguments);
+	},
+
+	destroy: function() {
+		if (this.handler)
+			this.handler.destroy();
+		this.handler = null;
+
+		OpenLayers.Control.prototype.destroy.apply(this, arguments);
+	},
+
+	draw: function() {
+		handlerOptions = {
 		'single': true,
 		'double': false,
 		'pixelTolerance': 0,
 		'stopSingle': false,
 		'stopDouble': false
+		};
+
+		this.handler = new OpenLayers.Handler.Click(this, {'click': this.click}, handlerOptions);
 	},
-	initialize: function(options) {
-		this.handlerOptions = OpenLayers.Util.extend(
-			{}, this.defaultHandlerOptions
-		);
-		OpenLayers.Control.prototype.initialize.apply(
-			this, arguments
-		);
-		this.handler = new OpenLayers.Handler.Click(
-			this, {
-				'click': this.trigger
-			}, this.handlerOptions
-		);
+
+	click: function(ev) {
+		var lonlat = map.getLonLatFromViewPortPx(ev.xy);
+		add_bug(lonlat.lon, lonlat.lat);
 	},
-	trigger: function(e) {
-		var lonlat = map.getLonLatFromViewPortPx(e.xy);
-		putNewMarker(lonlat.lon, lonlat.lat);
-	}
+
+	CLASS_NAME: "OpenLayers.Control.Click"
 });
 
-/*----------------------------------- cookie for nickname ------------------------- */
-
-function loadNickname()
+/*
+ * Actions
+ */
+function add_bug(x, y)
 {
-	var nickname = "";
-	var nameEQ = "name=";
-	var ca = document.cookie.split(';');
-	for(var i=0;i < ca.length;i++)
+	if(state == 0)
 	{
-		var c = ca[i];
-		while (c.charAt(0)==' ') c = c.substring(1,c.length);
-		if (c.indexOf(nameEQ) == 0)
+		state = 2;
+		current_feature = create_feature(x, y, popup_add_bug(x, y, get_cookie("osb_nickname")), 0);
+
+		current_feature.createPopup();
+		map.addPopup(current_feature.popup);
+
+		document.getElementById('description').focus();
+	}
+}
+
+function add_bug_submit(form)
+{
+	set_cookie("osb_nickname", document.getElementById("nickname").value);
+	description = document.getElementById("description");
+	description.value += " ["+ document.getElementById("nickname").value + "]";
+
+	submit_form(form, "addPOIexec");
+
+	current_feature.destroy();
+	current_feature = null;
+	state = 0;
+	setTimeout("refresh_osb()", 2000);
+}
+
+function add_bug_cancel()
+{
+	current_feature.destroy();
+	state = 0;
+	current_feature = null;
+}
+
+function add_comment(id)
+{
+	state = 3;
+	current_feature.popup.setContentHTML(popup_add_comment(id, get_cookie("osb_nickname")));
+	document.getElementById("comment").focus();
+}
+
+function add_comment_submit(id, form)
+{
+	set_cookie("osb_nickname", document.getElementById("nickname").value);
+	comment = document.getElementById("comment");
+	comment.value += " ["+ document.getElementById("nickname").value +"]";
+	
+	submit_form(form, "editPOIexec");
+
+	var str = escape_html(form.text.value);
+	for (var i in  osb_bugs)
+	{
+		if (osb_bugs[i].id == id)
 		{
-			nickname = c.substring(nameEQ.length,c.length);
+			str = osb_bugs[i].text + "<hr />" + str;
+			osb_bugs[i].text = str;
 			break;
 		}
 	}
-	if (nickname == "")
-		nickname = "NoName";
-	document.getElementById('nickname').value = nickname;
+
+	reset_popup(id);
 }
 
-function saveNickname()
+function close_bug(id)
 {
-	var nickname = document.getElementById('nickname').value;
-	var expires = (new Date((new Date()).getTime() + 157680000000)).toGMTString();
-	document.cookie="name="+encodeURIComponent(nickname)+";expires="+expires+";path=/";
+	state = 4;
+	current_feature.popup.setContentHTML(popup_close_bug(id));
 }
 
-/*map = new OpenLayers.Map('map', {
-		  maxExtent: new OpenLayers.Bounds(-20037508,-20037508,20037508,20037508),
-		  numZoomLevels: 18,
-		  maxResolution: 156543,
-		  units: 'm',
-		  projection: "EPSG:41001"
-		 });
-*/
+function close_bug_submit(id, form)
+{
+	submit_form(form, "closePOIexec");
+	
+	for (var i in  osb_bugs)
+	{
+		if (osb_bugs[i].id == id)
+		{
+			// Change bug status to closed:
+			osb_bugs[i].type = 1;
+			osb_bugs[i].feature.data.icon = create_feature.closed_bug_icon.clone();
+			osb_bugs[i].feature.destroyMarker();
+
+			create_marker(osb_bugs[i].feature);
+			break;
+		}
+	}
+
+	reset_popup(id);
+}
+
+function reset_popup(id)
+{
+	var bug = get_bug(id);
+	if (bug.type == 0)
+		bug.feature.popup.setContentHTML(popup_open_bug(id));
+	else
+		bug.feature.popup.setContentHTML(popup_closed_bug(id));
+	
+	state = 1;
+}

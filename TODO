@@ -1,6 +1,4 @@
-- Decide how exactly mouse clicks 
-  should be handled on the osb page
-- Add support for nicknames in bugs
+- Beautify popupboxes
 - Set-up a reverse proxy for bug submission
 - Write project descriptions
 - Prepare links on the press page and prepare 
@@ -10,4 +8,4 @@
 - Write contribute section
 - Collect links and put them on the links page
 - Look into the zoom-in bug
-- Update location when the sidebar is opened/closed
+- Look at coordinate transformations
