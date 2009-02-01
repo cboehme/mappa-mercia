@@ -270,6 +270,11 @@ function popup_add_bug(x, y, nickname)
 	return "<form><input type='hidden' name='lon' value='"+x2lon(x)+"'><input type='hidden' name='lat' value='"+y2lat(y)+"'>Description: <input type='text' id='description' name='text'><br>Nickname: <input type='text' id='nickname' value='"+(nickname ? nickname : "NoName")+"'><br><input type='button' value='OK' onclick='add_bug_submit(this.form);'><input type='button' value='Cancel' onclick='add_bug_cancel();'></form>";
 }
 
+function popup_add_bug_wait()
+{
+	return "<div>Please wait while your bug is submitted ...</div>";
+}
+
 function popup_add_comment(bug_or_id, nickname)
 {
 	bug = bug_or_id instanceof Object ? bug_or_id : get_bug(bug_or_id);
@@ -343,14 +348,16 @@ function get_form_values(fobj)
 	return str;
 }
 
-function submit_form(f, url)
+function submit_form(f, url, on_submitted, on_finished)
 {
 	url = "/osb-proxy/"+url;
 	var str = get_form_values(f);
-	get_xml(url, str);
+	if(on_submitted)
+		on_submitted();
+	get_xml(url, str, on_finished);
 }
 
-function get_xml(url, str)
+function get_xml(url, str, on_finished)
 {
 	var xhr;
 	try  { xhr = new ActiveXObject('Msxml2.XMLHTTP'); }
@@ -366,10 +373,10 @@ function get_xml(url, str)
 
 	xhr.onreadystatechange = function()
 	{
-		if(xhr.readyState == 4)
+		if (xhr.readyState == 4)
 		{
-			if(xhr.status == 200)  { /*OK*/ }
-			else  { /*error*/ }
+			if (on_finished)
+				on_finished(xhr.status);
 		}
 	};
 
@@ -543,12 +550,20 @@ function add_bug_submit(form)
 	description = document.getElementById("description");
 	description.value += " ["+ document.getElementById("nickname").value + "]";
 
-	submit_form(form, "addPOIexec");
+	submit_form(form, "addPOIexec", add_bug_submitted, add_bug_completed);
+}
 
+function add_bug_submitted()
+{
+	current_feature.popup.setContentHTML(popup_add_bug_wait());
+}
+
+function add_bug_completed()
+{
 	current_feature.destroy();
 	current_feature = null;
 	state = 0;
-	setTimeout("refresh_osb()", 2000);
+	refresh_osb();
 }
 
 function add_bug_cancel()

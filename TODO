@@ -1,5 +1,3 @@
-- Beautify popupboxes
-- Set-up a reverse proxy for bug submission
 - Write project descriptions
 - Prepare links on the press page and prepare 
   section where the press release will be placed
@@ -7,5 +5,11 @@
 - Beautify contacts
 - Write contribute section
 - Collect links and put them on the links page
+- Set cursor shapes for osb
+- Beautify popupboxes
+- Test with all browsers
 - Look into the zoom-in bug
+
+- Add Closebox to popups
 - Look at coordinate transformations
+- Look into the problem with the misplaced popups
