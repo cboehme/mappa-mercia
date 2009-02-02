@@ -35,6 +35,7 @@ else can do the same with anything you produce. For more information you should 
 	<li><a href="http://www.openrouteservice.org/">OpenRouteService</a>: An online routing service for cars, pedestrians and bicycles</li>
 	<li><a href="http://wiki.openstreetmap.org/wiki/OSM_Map_On_Garmin">OSM Maps on Garmin</a>: Using OSM map data on Garmin GPS devices</li>
 	<li><a href="http://wiki.openstreetmap.org/wiki/Routing">Routing</a>: A list of application that use OSM data for routing</li>
+	<li><a href="http://www.&ouml;pnvkarte.de/?lon=16.354&lat=48.198&zoom=12">&Ouml;pnvkarte</a>: A Public transport map of Vienna</li>
 </ul>
 
 <!--#include virtual="style/default_footer.shtml.inc"-->

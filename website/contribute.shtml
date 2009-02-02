@@ -2,4 +2,45 @@
 
 <h1>Contribute!</h1>
 
+<p>All streets in Birmingham are now mapped. However, that does not mean that
+there is no work left. It is rather the opposite! There are still plenty of opportunities
+to get involved and improve the representation of <em>your</em> neighbourhood on the map.
+</p>
+
+<h2>What Can I Do?</h2>
+
+<ul>
+	<li><h4><a href="/openstreetbugs.shtml">Report Errors!</a></h4> This is the
+	easiest way to contribute to the map. Just browse the online map and use your local
+	knowledge to find errors or things that are missing on the map. Other mappers can then
+	add or correct the data.</li>
+	<li><h4>Add Points of Interest</h4> You often do not even need a gps device
+	to this. Go on a walk around your neighbourhood with a printout of the
+	Birmingham map and mark all interesting things like shops, schools or bus
+	stops on the printout. Back home you can add them to the map with the
+	online map editor <a href="http://www.openstreetmap.org/edit">Potlatch</a>.</li>
+	<li><h4>Add footpaths</h4> You have a gps device? Then, why not map
+	footpaths?  Birmingham has lots of them which are not yet on the map. Take
+	your dog for a walk, put your gps device in your pocket and record the
+	track whilst you are walking. Once you are back at your computer you can upload
+	the track to the Openstreetmap website and use it to draw the footpaths in the right
+	place. All the details of how to map with a gps device are explained on the <a
+	href="http://wiki.openstreetmap.org/wiki/Beginners'_Guide">Openstreetmap
+	wiki</a>.</li>
+	<li><h4>Map the Black Country</h4> Birmingham might be finished but the
+	Black Country is still a white spot!  It works like mapping footpaths only
+	that you can map <em>every</em> road you come along. That is your chance
+	to become a real explorer!</li>
+	<li><h4>Mapping Projects</h4> On the <a href="/projects.shtml">projects page</a> we
+	created a list of mini-projects that can be tackled in and around Birmingham.
+	Have look there if you find something that interests you!</li>
+</ul>
+
+<h2>Help Needed?</h2>
+
+<p>No clue how to start mapping? &ndash; No worries, there are some mappers around in Birmingham
+who are happy to help you getting started! The <a href="/contact.shtml">contact page</a> tells you
+how to find them.
+</p>
+
 <!--#include virtual="style/default_footer.shtml.inc"-->

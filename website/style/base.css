@@ -121,7 +121,7 @@ ul#main_menu li
 #body a:visited:active
 	{ outline: 1px solid #c0c0c0; }
 
-#body li  { margin-top: 3px; }
+#body li  { margin-top: 4px; }
 
 #body h1,
 #body h2,
@@ -130,6 +130,18 @@ ul#main_menu li
 	font-weight: normal;
 	color: #176bc1;
 }
+
+#body h4
+{
+	display: inline;
+
+	margin-right: 10px;
+
+	font-weight: bold;
+	color: #176bc1;
+}
+
+#body strong  { color: red; }
 
 p.SmallPrint  { font-size: small; }
 
