@@ -72,7 +72,7 @@ users have a stake in having accurate data. If one person puts in inaccurate
 data, maliciously or accidentally, the other 99.9% of people can check it, fix
 it, or get rid of it. Just think how amazing it was a few years back when you
 saw Google Maps for the first time. Suddenly mapping was cool, and access via
-an API<a href="#footnote1" name="footnote1_ref">*</a> lead to a wave of
+an API<a href="#footnote1" id="footnote1_ref">*</a> lead to a wave of
 innovation. Satnav was nowhere 3 years ago. Look at it now! But you still can't
 access the incredible amount of data locked behind the API and you can't add or
 improve it, so your applications are limited. Just think of the explosion of
@@ -130,7 +130,7 @@ Cartographic Society.
 (Tel No <a href="mailto:brian@mappa-mercia.org">brian@mappa-mercia.org</a>).
 </p>
 
-<p>Press contact Andy Robinson (Tel No and <a href="mailto:andy@mappa-mercia.org">andy@mappa-mercia.org</a>).
+<p>Press contact Andy Robinson (Tel No and <a href="mailto:press@mappa-mercia.org">press@mappa-mercia.org</a>).
 </p>
 
 <p>More information for editors can be found at:
@@ -145,14 +145,14 @@ Cartographic Society.
 	<li><a href="http://www.mappa-mercia.org/">http://www.mappa-mercia.org/</a></li>
 </ul>
 
-<p class="SmallPrint"><a name="footnote1">*</a>API Application Programming
+<p class="SmallPrint"><a id="footnote1">*</a>API Application Programming
 Interface &ndash; a method by which commercial software developers
 &ldquo;open&rdquo; their software via a gateway to third parties whilst at the
 same time protecting their commercial intellectual property i.e you can &ldquo;hook&rdquo;
 into the software but you can't see the internal workings. [<a href="#footnote1_ref">Back</a>]
 </p>
 
-<h2><a name="birmingham_images">Images of the Birmingham Map</a></h2>
+<h2><a id="birmingham_images">Images of the Birmingham Map</a></h2>
 
 <ul>
 	<li><a href="/press-images/birmingham.png">Birmingham (3.5MB)</a></li>
@@ -167,15 +167,15 @@ into the software but you can't see the internal workings. [<a href="#footnote1_
 before publishing maps; we want everyone to know that they're free to copy, so you have to tell them when you publish.
 </p>
 
-<h2><a name="further_information">Further Information</a></h2>
+<h2><a id="further_information">Further Information</a></h2>
 
 <p>The main Openstreetmap website has a large press section with background information about the project
 and with images suitable for press use: <a href="http://wiki.openstreetmap.org/wiki/Press">
 Openstreetmap press portal</a>.
 </p>
 
-<p>For further information please contact <a href="mailto:andy@mappa-mercia.org">
-andy@mappa-mercia.org</a>.
+<p>For further information please contact <a href="mailto:press@mappa-mercia.org">
+press@mappa-mercia.org</a>.
 </p>
 
 <!--#include virtual="style/default_footer.shtml.inc"-->

@@ -2,7 +2,10 @@
 
 <h1>Projects</h1>
 
-<p>The streets of Birmingham are all mapped now but there are still plenty of things to do:
+<p>The streets of Birmingham are all mapped now but there are still lots of things to do. 
+If a project sparked your interest just have a go at it! But do not forget to have a look at
+the <a href="http://wiki.openstreetmap.org/wiki/Mappa_Merciai#NEW.21_Mini-projects_for_2009">
+Mappa Mercia wiki page</a>. The coordination and collaboration on the projects is happening there.
 </p>
 
 <ul>
@@ -15,34 +18,85 @@
 <li><a href="#turn_restrictions">Entering Turn Restrictions</a></li>
 <li><a href="#postboxes">Adding Postboxes</a></li>
 <li><a href="#powerlines">Adding Powerlines</a></li>
-<li><a href="#redditch">Mapping Redditch</a></li>
-<li><a href="#bromsgrove">Mapping Bromsgrove</a></li>
+<li><a href="#redditch_bromsgrove">Mapping Redditch or Bromsgrove</a></li>
 <li><a href="#black_country">Mapping the Black Country</a></li>
 </ul>
 
 <h2><a id="canals">Mapping the Canals</a></h2>
 
+<p>Birmingham claims to have more canals then Venice. Most of the canals are already on the map.
+However there are plenty of features on and along the watersways that are still missing from map.
+Many locks, moorings, towpaths and access points are waiting to be mapped.
+</p>
+
 <h2><a id="universities">Mapping the University Campuses</a></h2>
+
+There are three universities in Birmingham. At the moment their campuses are mapped relatively
+incomplete. Especially the buildings are not yet on the map. The mapping of the Birmingham unis
+is coordinated on <a href="http://wiki.openstreetmap.org/wiki/BirminghamUnis">this wiki page</a>.
 
 <h2><a id="blue_plaques">Adding all Blue Plaques</a></h2>
 
+<p>The <a href="http://www.birminghamcivicsociety.org.uk/">Birmingham Civic Society</a> is erecting
+<em>Blue Plaques</em> in the honour of famous Birmingham citizens. It would be really nice to have
+them all on the map. A list of all plaques is can be found on the society's 
+<a href="http://www.birminghamcivicsociety.org.uk//blueplaques.htm">website</a>.
+
 <h2><a id="buildings">Mapping and Improving Major Buildings</a></h2>
+
+<p>The map of the city centre features already many buildings. But there are more and those that are
+in the database can be improved. Have a go at your favourite landmark building!
+</p>
 
 <h2><a id="footpaths">Mapping Footpaths</a></h2>
 
+<p>Birmingham is covered with footpaths. Having them on the map would make it an invaluable tool for
+every walker and cyclist in Birmingham!
+</p>
+
 <h2><a id="busses">Adding Bus Routes and Bus Stops</a></h2>
-Example: <a href="http://www.&ouml;pnvkarte.de/?lon=16.354&lat=48.198&zoom=12" title="Go to &quot;Public transport map of Vienna&quot;">Public transport map of Vienna</a>
+
+<p>Many bus stops and bus routes still need to be added to the map. Have a look at 
+the <a href="http://www.&ouml;pnvkarte.de/?lon=16.354&lat=48.198&zoom=12">Public 
+transport map of Vienna</a> to see what can be done with public transport information
+in Openstreetmap.
+</p>
 
 <h2><a id="turn_restrictions">Entering Turn Restrictions</a></h2>
 
+<p>If you want to use maps from Openstreetmap on your sat nav you will want to have the turning
+restrictions for all junctions in the data. On <a href="http://osm.virtuelle-loipe.de/restrictions/">
+this site</a> you can find a map that shows the turning restrictions that are currently in the
+database. So, you easily check (and, of course, add) the restrictions for your favourite junction!
+</p>
+
 <h2><a id="postboxes">Adding Postboxes</a></h2>
+
+<p>Under the freedom of information act the Royal Mail has provided Openstreetmap with a list of all
+their postboxes. Sadly, the locations are quite inaccurate so that all postboxes still need to be
+located exactly before the can be placed on the map. The list from Royal Mail can be accessed on
+<a href="http://www.dracos.co.uk/play/locating-postboxes/?pc1=">this website</a>. It also shows which
+postboxes have already been located.
+</p>
 
 <h2><a id="powerlines">Adding Powerlines</a></h2>
 
-<h2><a id="redditch">Mapping Redditch</a></h2>
+<p>Powerlines are probably not the most exiting thing in the world (unless you touch them, of course!).
+However, the look nice on the map and it can be fun to find out which ways our electricity takes. Last
+but not least it is a great opportunity to get your compass out and take some old-school bearings (Though,
+you still need a gps device to find out where you are since you do not now yet where the power pylon is).
+</p>
 
-<h2><a id="bromsgrove">Mapping Bromsgrove</a></h2>
+<h2><a id="redditch_bromsgrove">Mapping Redditch or Bromsgrove</a></h2>
+
+<p>Bromsgrove and Redditch are in great parts not yet mapped. This provides a great opportunity to go on 
+some fully fletched mapping adventure. At the same time the size of both places let the job look managable!
+</p>
 
 <h2><a id="black_country">Mapping the Black Country</a></h2>
+
+<p>Birmingham would not be without the Black Country. So, why stop at the motorway ring? The Black Country
+has many roads to be mapped!
+</p>
 
 <!--#include virtual="style/default_footer.shtml.inc"-->
