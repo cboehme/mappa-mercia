@@ -57,7 +57,7 @@ every walker and cyclist in Birmingham!
 <h2><a id="busses">Adding Bus Routes and Bus Stops</a></h2>
 
 <p>Many bus stops and bus routes still need to be added to the map. Have a look at 
-the <a href="http://www.&ouml;pnvkarte.de/?lon=16.354&lat=48.198&zoom=12">Public 
+the <a href="http://www.&ouml;pnvkarte.de/?lon=16.354&amp;lat=48.198&amp;zoom=12">Public 
 transport map of Vienna</a> to see what can be done with public transport information
 in Openstreetmap.
 </p>
