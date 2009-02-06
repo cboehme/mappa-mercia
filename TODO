@@ -9,6 +9,7 @@
 - Add pdf of press release
 - Do not change menubar link colours
 
+- Fix Warnings in CSS
 - Check validity
 - Test with all browsers
 - Look into the zoom-in bug
