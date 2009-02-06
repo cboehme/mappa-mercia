@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="/style/base.css" type="text/css">
 	<link rel="stylesheet" href="/style/<!--#echo var="PAGE_TYPE"-->.css" type="text/css">
 
-	<!-- #if expr="${PAGE_TYPE} == map"-->
+	<!--#if expr="${PAGE_TYPE} == map"-->
 	<script src="http://openlayers.org/api/OpenLayers.js" type="text/javascript"></script>
 	<script src="http://www.openstreetmap.org/openlayers/OpenStreetMap.js" type="text/javascript"></script>
 	<script src="/scripts/map.js" type="text/javascript"></script>
