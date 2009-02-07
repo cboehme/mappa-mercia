@@ -156,6 +156,7 @@ function init_map(ev)
 		'isBaseLayer': true,
 		'transitionEffect': 'resize',
 		'displayOutsideMaxExtent': true,
+		'numZoomLevels': 19,
 		'wrapDateLine': true
 	});
 
@@ -243,42 +244,75 @@ function lonLatToMercator(ll) { return new OpenLayers.LonLat(lon2x(ll.lon), lat2
 /*
  * html contents of the popups
  */
+
+/* Changes all occurences of "<hr />" to </p><p class="Comment"> for proper markup of comments.
+ */
+function fix_markup(str)
+{
+	return str.replace(/<hr \/>/g, '</p><p class="Comment"><b>Comment:</b> ');
+}
+
 function popup_open_bug(bug_or_id)
 {
 	bug = bug_or_id instanceof Object ? bug_or_id : get_bug(bug_or_id);
+	
+	var description = '<h1>Unresolved Error</h1><p><b>Description:</b> '+fix_markup(bug.text)+'</p>';
+	var action_comment = '<ul><li><a href="#" onclick="add_comment('+bug.id+'); return false;">Add comment</a></li>';
+	var action_edit = '<li><a href="http://www.openstreetmap.org/edit?lat='+bug.lat+'&amp;lon='+bug.lon+'&amp;zoom=17" target="_blank">Edit in Potlatch</a></li>';
+	var action_close = '<li><a href="#" onclick="close_bug('+bug.id+'); return false;">Mark as Fixed</a></div></li></ul>';
 
-	return "<div>"+bug.text+"</div><div><br><a href='#' onclick='add_comment("+bug.id+"); return false;'>Add comment</a><br><a href='http://www.openstreetmap.org/edit?lat="+bug.lat+"&lon="+bug.lon+"&zoom=17' target='_blank'>Edit in Potlatch</a><br><a href='#' onclick='close_bug("+bug.id+"); return false;'>Close bug</a></div>";
+	return description+action_comment+action_edit+action_close;
 }
 
 function popup_closed_bug(bug_or_id)
 {
 	bug = bug_or_id instanceof Object ? bug_or_id : get_bug(bug_or_id);
 
-	return "<div>"+bug.text+"</div>";
+	var description = '<h1>Fixed Error</h1><p><b>Description:</b> '+fix_markup(bug.text)+'</p>';
+	var note = '<p class="Note">This error has been fixed already. However, it might take a couple of days before the map image is updated.</p>';
+
+	return description+note;
 }
 
 function popup_add_bug(x, y, nickname)
 {
-	return "<form><input type='hidden' name='lon' value='"+x2lon(x)+"'><input type='hidden' name='lat' value='"+y2lat(y)+"'>Description: <input type='text' id='description' name='text'><br>Nickname: <input type='text' id='nickname' value='"+(nickname ? nickname : "NoName")+"'><br><input type='button' value='OK' onclick='add_bug_submit(this.form);'><input type='button' value='Cancel' onclick='add_bug_cancel();'></form>";
+	var intro_text = '<h1>Create an Error Report</h1><p>Please provide a short description of what\'s wrong here. You can also enter your nickname to show that you found the error.</p>';
+	var form_header = '<form><div><input type="hidden" name="lon" value="'+x2lon(x)+'"><input type="hidden" name="lat" value="'+y2lat(y)+'"></div>';
+	var description = '<div><span class="InputLabel">Description:</span><input type="text" id="description" name="text"></div>';
+	var nickname = '<div><span class="InputLabel">Your Nickname:</span><input type="text" id="nickname" value="'+(nickname ? nickname : 'NoName')+'"></div>';
+	var form_footer = '<div class="FormFooter"><input type="button" value="OK" onclick="add_bug_submit(this.form);"><input type="button" value="Cancel" onclick="add_bug_cancel();"></div></form>';
+
+	return intro_text+form_header+description+nickname+form_footer;
 }
 
 function popup_add_bug_wait()
 {
-	return "<div>Please wait while your bug is submitted ...</div>";
+	return '<h1>Create an Error Report</h1><p>Please wait while your error is submitted ...</p>';
 }
 
 function popup_add_comment(bug_or_id, nickname)
 {
 	bug = bug_or_id instanceof Object ? bug_or_id : get_bug(bug_or_id);
 
-	return "<div>"+bug.text+"</div><form id='edit'><input type='hidden' name='id' value='"+bug.id+"'><input type='text' id='comment' name='text'><br>Nickname: <input type='text' id='nickname' value='"+(nickname ? nickname : "NoName")+"'><br><input type='button' value='OK' onclick='add_comment_submit("+bug.id+", this.form);'><input type='button' value='Cancel' onclick='reset_popup("+bug.id+");'></form>";
+	var description = '<h1>Add a Comment</h1><p><b>Description:</b> '+fix_markup(bug.text)+'</p>';
+	var form_header = '<form class="NewComment"><div><input type="hidden" name="id" value="'+bug.id+'"></div>';
+	var comment = '<div><span class="InputLabel">Your Comment:</span><input type="text" id="comment" name="text"></div>';
+	var nickname = '<div><span class="InputLabel">Your Nickname:</span><input type="text" id="nickname" value="'+(nickname ? nickname : 'NoName')+'"></div>';
+	var form_footer = '<div class="FormFooter"><input type="button" value="OK" onclick="add_comment_submit('+bug.id+', this.form);"><input type="button" value="Cancel" onclick="reset_popup('+bug.id+');"></div></form>';
+	
+	return description+form_header+comment+nickname+form_footer;
 }
 
 function popup_close_bug(bug_or_id)
 {
 	bug = bug_or_id instanceof Object ? bug_or_id : get_bug(bug_or_id);
 
-	return "<div>"+bug.text+"</div><br><div class='alert'>Do you really want to close this bug?<br>The bug will be deleted after a week.</div><form><input type='hidden' name='id' value='"+bug.id+"'><input type='button' value='Yes' onclick='close_bug_submit("+bug.id+", this.form);'><input type='button' value='No' onclick='reset_popup("+bug.id+");'></form>"
+	var warning = '<h1>Mark Error as Fixed</h1><p>Do you really want to mark this error as fixed? The error will be deleted after a week.</p>';
+	var form_header = '<form><div><input type="hidden" name="id" value="'+bug.id+'"></div>';
+	var form_footer = '<div class="FormFooter"><input type="button" value="Yes" onclick="close_bug_submit('+bug.id+', this.form);"><input type="button" value="No" onclick="reset_popup('+bug.id+');"></div></form>';
+	var description = '<p><b>Description:</b> '+fix_markup(bug.text)+'</p>';
+
+	return warning+form_header+form_footer+description;
 }
 
 /*
