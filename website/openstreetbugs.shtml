@@ -9,5 +9,8 @@ Simply click on the map where the failure is and enter a short description.
 <p><strong>Do NOT use licensed data</strong> 
 like paper maps or Google Map, etc. Only use your knowledge of the area or public domain data.
 </p>
+<p>According to the Openstreetmap licence all bugs you submit here will be licenced
+under <a href="http://creativecommons.org/licenses/by-sa/2.0/" rel="copyright" title="Creative Commons License">CC BY-SA</a>.
+</p>
 
 <!--#include virtual="style/map_footer.shtml.inc"-->

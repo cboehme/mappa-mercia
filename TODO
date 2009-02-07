@@ -1,21 +1,16 @@
-- Update brians email address?
-- Add licence and link to the error report page
-- Adding link to donation page?
+- Update pdf press release
+- Update html press release
+- Proof-reading
 
-- Add email address to footer
-- Add favicon
-- Set cursor shapes for osb
 - Beautify popupboxes
-- Add pdf of press release
-- Do not change menubar link colours
+- Add favicon
 
 - Fix Warnings in CSS
 - Check validity
 - Test with all browsers
-- Look into the zoom-in bug
 
 - Add Closebox to popups
 - Look at coordinate transformations
 - Look into the problem with the misplaced popups
 - When getting position from the url update the position cookie
-
+- Fix cursor bug in Opera

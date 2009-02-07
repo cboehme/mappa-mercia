@@ -61,17 +61,14 @@ ul#main_menu li
 
 #main_menu a:link,
 #main_menu a:visited
-	{ text-decoration: none; }
-
-#main_menu a:link  { color: white; }
-#main_menu a:visited  { color: #e0e0e0; }
+{
+	color: white;
+	text-decoration: none;
+}
 
 #main_menu a:link:hover,
 #main_menu a:visited:hover
-{
-	color: white;
-	text-decoration: underline;
-}
+	{ text-decoration: underline; }
 
 #main_menu a:focus  { outline: 1px dotted #e0e0e0; }
 
@@ -189,3 +186,11 @@ p.SmallPrint  { font-size: small; }
 #footer a:link:active,
 #footer a:visited:active
 	{ color: white; }
+
+#info_email
+{
+	position: absolute;
+
+	top: 38px;
+	right: 15px;
+}

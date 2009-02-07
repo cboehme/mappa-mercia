@@ -180,10 +180,12 @@ function init_map(ev)
 	if (cookie != null)
 	{
 		v = cookie.split(":");
-		loc.lat = v[0];
-		loc.lon = v[1];
-		zoom = v[2];
+		loc.lat = Number(v[0]);
+		loc.lon = Number(v[1]);
+		zoom = Number(v[2]);
 	}
+	// Only set the location if no position provided in 
+	// the url (which is handled by the ArgParser control:
 	if(location.search == "")
 		map.setCenter(loc.clone().transform(new OpenLayers.Projection("EPSG:4326"), map.getProjectionObject()), zoom);
 
@@ -191,7 +193,6 @@ function init_map(ev)
 }
 
 run_on_load(init_map);
-
 
 /*
  * Openstreetbugs
@@ -215,6 +216,8 @@ function openstreetbugs()
 
 function init_openstreetbugs(ev)
 {
+	document.getElementById("map_OpenLayers_Container").style.cursor = "crosshair";
+
 	osb_layer = new OpenLayers.Layer.Markers("OpenStreetBugs");
 	osb_layer.setOpacity(0.7);
 
@@ -227,19 +230,6 @@ function init_openstreetbugs(ev)
 	click.activate();
 
 	refresh_osb();
-
-	/* TODO: Can't we do this with css alone? 
-	 * #map { cursor: crosshair; }
-	function mapOver()
-	{
-		document.body.style.cursor='crosshair';
-	}
-
-	function mapOut()
-	{
-		document.body.style.cursor='auto';
-	}
-	*/
 }
 
 function plusfacteur(a) { return a * (20037508.34 / 180); }
@@ -305,6 +295,7 @@ function make_request(url, params)
 
 	var script = document.createElement("script");
 	script.src = url;
+	script.type = "text/javascript";
 	document.body.appendChild(script);
 }
 
@@ -392,12 +383,17 @@ function get_xml(url, str, on_finished)
  */
 function refresh_osb()
 {
+	if (refresh_osb.call_count === undefined)
+		refresh_osb.call_count = 0;
+	else
+		++refresh_osb.call_count;
+	
 	bounds = map.getExtent().toArray();
 	b = y2lat(bounds[1]);
 	t = y2lat(bounds[3]);
 	l = x2lon(bounds[0]);
 	r = x2lon(bounds[2])
-	var params = { "b": b, "t": t, "l": l, "r": r };
+	var params = { "b": b, "t": t, "l": l, "r": r, "ucid": refresh_osb.call_count };
 	make_request("/getBugs", params);
 }
 
@@ -449,14 +445,14 @@ function create_marker(feature)
 	var marker = feature.createMarker();
 	var marker_click = function (ev)
 	{
-		if(state == 0)
+		if (state == 0)
 		{
 			this.createPopup();
 			map.addPopup(this.popup);
 			state = 1;
 			current_feature = this;
 		}
-		else if(state == 1 && current_feature == this)
+		else if (state == 1 && current_feature == this)
 		{
 			map.removePopup(this.popup)
 			state = 0;
@@ -466,19 +462,26 @@ function create_marker(feature)
 	};
 	var marker_mouseover = function (ev)
 	{
-		//TODO: Style-sheets?  document.body.style.cursor='pointer';
-		if(state == 0)
+		if (state == 0)
 		{
+			document.getElementById("map_OpenLayers_Container").style.cursor = "pointer";
 			this.createPopup();
 			map.addPopup(this.popup)
 		}
+		else if (state != 2 && this == current_feature) /* If not adding a new bug show pointer over current feature */
+			document.getElementById("map_OpenLayers_Container").style.cursor = "pointer";
+
 		OpenLayers.Event.stop(ev);
 	};
 	var marker_mouseout = function (ev)
 	{
-		//TODO: Style-sheets?  document.body.style.cursor='crosshair';
-		if(state == 0)
+		if (state == 0)
+		{
+			document.getElementById("map_OpenLayers_Container").style.cursor = "crosshair";
 			map.removePopup(this.popup);
+		}
+		else
+			document.getElementById("map_OpenLayers_Container").style.cursor = "default";
 		OpenLayers.Event.stop(ev);
 	};
 	/* marker_click must be registered as click and not as mousedown!
@@ -536,6 +539,8 @@ function add_bug(x, y)
 {
 	if(state == 0)
 	{
+		document.getElementById("map_OpenLayers_Container").style.cursor = "default";
+
 		state = 2;
 		current_feature = create_feature(x, y, popup_add_bug(x, y, get_cookie("osb_nickname")), 0);
 
@@ -562,6 +567,8 @@ function add_bug_submitted()
 
 function add_bug_completed()
 {
+	document.getElementById("map_OpenLayers_Container").style.cursor = "crosshair";
+
 	current_feature.destroy();
 	current_feature = null;
 	state = 0;
@@ -570,6 +577,8 @@ function add_bug_completed()
 
 function add_bug_cancel()
 {
+	document.getElementById("map_OpenLayers_Container").style.cursor = "crosshair";
+
 	current_feature.destroy();
 	state = 0;
 	current_feature = null;
@@ -633,6 +642,8 @@ function close_bug_submit(id, form)
 
 function reset_popup(id)
 {
+	document.getElementById("map_OpenLayers_Container").style.cursor = "default";
+
 	var bug = get_bug(id);
 	if (bug.type == 0)
 		bug.feature.popup.setContentHTML(popup_open_bug(id));
