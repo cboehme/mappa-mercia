@@ -1,9 +1,17 @@
 #!/usr/bin/env python
 
+import MySQLdb
 import cgi
 
 def main():
 	print "Content-type: text/html\n"
 	form = cgi.FieldStorage()
+	values = {}
+	values["id"] = form["id"].value
+	
+	conn = MySQLdb.connect("localhost", user="osb", passwd="osb12", db="osb")
+	curs = conn.cursor()
+	curs.execute("UPDATE bugs SET type = 1, close_date = NOW() WHERE id = %(id)s", values)
+	conn.commit()
 
 main()

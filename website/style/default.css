@@ -1,10 +1,4 @@
 /*
- * Page header
- */
-
-#header  { height: 60px; }
-
-/*
  * Page body
  */
 
@@ -22,3 +16,10 @@
 	padding-top: 20px;
 	padding-bottom: 30px;
 }
+
+
+/*
+ * Page header
+ */
+
+#header  { height: 60px; }

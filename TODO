@@ -1,16 +1,14 @@
-- Update pdf press release
-- Update html press release
-- Update after proof-reading
+- proof-reading
 
-- Add favicon
-- Check zoom levels
-
-- Fix Warnings in CSS
 - Check validity
 - Test with all browsers
 
+- Check/Fix Warnings in CSS
 - Add Closebox to popups
-- Look at coordinate transformations
-- Look into the problem with the misplaced popups
+- Look at coordinate transformations for osb
+- Look into the problem with the misplaced popups:
+  Zooming in while showing a popup does not update the popup position.
+  It also stops the pan bar from being updated.
 - When getting position from the url update the position cookie
 - Fix cursor bug in Opera
+- Fix zoombar bug properly

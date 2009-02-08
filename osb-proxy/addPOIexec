@@ -1,11 +1,19 @@
 #!/usr/bin/env python
 
+import MySQLdb
 import cgi
-import time
 
 def main():
 	print "Content-type: text/html\n"
 	form = cgi.FieldStorage()
-	time.sleep(2)
+	values = {}
+	values["lat"] = form["lat"].value
+	values["lon"] = form["lon"].value
+	values["text"] = form["text"].value
+
+	conn = MySQLdb.connect("localhost", user="osb", passwd="osb12", db="osb")
+	curs = conn.cursor()
+	curs.execute("INSERT INTO bugs SET lat = %(lat)s, lon = %(lon)s, text = %(text)s, type = 0", values)
+	conn.commit()
 
 main()

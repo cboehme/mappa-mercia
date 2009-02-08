@@ -1,0 +1,21 @@
+#!/usr/bin/env python
+
+import MySQLdb
+import cgi
+
+def main():
+	print "Content-type: text/html\n"
+	form = cgi.FieldStorage()
+	values = {}
+	values["b"] = form["b"].value
+	values["t"] = form["t"].value
+	values["l"] = form["l"].value
+	values["r"] = form["r"].value
+	
+	conn = MySQLdb.connect("localhost", user="osb", passwd="osb12", db="osb")
+	curs = conn.cursor()
+	curs.execute("SELECT * FROM bugs WHERE %(b)s <= lat and lat <= %(t)s and %(l)s <= lon and lon <= %(r)s", values)
+	for c in curs:
+		print "putAJAXMarker(%i, %f, %f, '%s', %i);" % c[0:5]
+
+main()

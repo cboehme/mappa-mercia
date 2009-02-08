@@ -153,26 +153,24 @@ function save_map_location()
 function init_map(ev)
 {
 	var mapnik = new OpenLayers.Layer.OSM.Mapnik("OpenStreetMap", {
-		'isBaseLayer': true,
-		'transitionEffect': 'resize',
-		'displayOutsideMaxExtent': true,
-		'numZoomLevels': 19,
-		'wrapDateLine': true
+		displayOutsideMaxExtent: true,
+		wrapDateLine: true
 	});
 
 	map = new OpenLayers.Map('map', {
-		'controls': [
-			new OpenLayers.Control.MouseDefaults(),
-			new OpenLayers.Control.ScaleLine(),
+		controls: [
+			new OpenLayers.Control.ArgParser(),
+			new OpenLayers.Control.Navigation(),
 			new OpenLayers.Control.PanZoomBar(),
-			new OpenLayers.Control.ArgParser()
+			new OpenLayers.Control.ScaleLine()
 		],
-		'maxResolution': 156543.0399,
-		'numZoomLevels': 20,
-		'units': 'm',
-		'displayProjection': new OpenLayers.Projection("EPSG:4326")
+		maxResolution: 156543.0339,
+		numZoomLevels: 20,
+		units: 'm',
+		projection: new OpenLayers.Projection("EPSG:900913"),
+		displayProjection: new OpenLayers.Projection("EPSG:4326")
 	});
-	map.addLayers([mapnik]);
+	map.addLayer(mapnik);
 	
 	// Load previous map location:
 	var loc = new OpenLayers.LonLat(-1.902, 52.477);
@@ -320,7 +318,7 @@ function popup_close_bug(bug_or_id)
  */
 function make_request(url, params)
 {
-	url = "http://openstreetbugs.appspot.com/"+url;
+	url = "/osb-proxy/"+url;
 	for (var name in params)
 	{
 		url += (url.indexOf("?") > -1) ? "&" : "?";
@@ -428,7 +426,7 @@ function refresh_osb()
 	l = x2lon(bounds[0]);
 	r = x2lon(bounds[2])
 	var params = { "b": b, "t": t, "l": l, "r": r, "ucid": refresh_osb.call_count };
-	make_request("/getBugs", params);
+	make_request("getBugs", params);
 }
 
 function bug_exist(id)

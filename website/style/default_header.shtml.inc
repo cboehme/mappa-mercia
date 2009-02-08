@@ -4,6 +4,8 @@
 <head>
 	<title>Mappa Mercia</title>
 
+	<link rel="icon" type="image/png" href="/style/site-icon.png">
+
 	<link rel="stylesheet" href="/style/base.css" type="text/css">
 	<link rel="stylesheet" href="/style/default.css" type="text/css">
 

@@ -1,3 +1,7 @@
+/*
+ * General style
+ */
+
 body
 {
 	margin: 0px;
@@ -11,70 +15,28 @@ body
 
 img  { border: none; }
 
-/*
- * Page header
- */
-
-#header  { position: relative; }
-
-#header_map
+h1, h2, h3
 {
-	position: absolute;
-	left: 0px;
-	top: 0px;
+	font-weight: normal;
+	color: #176bc1;
 }
 
-#header_title
-{
-	position: absolute;
-	top: 9px;
-	right: 15px;
-}
-
-/*
- * Main menu
- */
-
-ul#main_menu
-{
-	min-height: 19px;
-
-	margin: 0px;
-
-	padding-left: 20px;
-	padding-right: 0px;  /* list items already have a right margin */
-	padding-top: 5px;
-	padding-bottom: 5px;
-
-	background-color: #525967;
-	background-image: url(menu_background.png);
-	background-position: center;
-	background-repeat: repeat-x;
-}
-
-ul#main_menu li
+h4
 {
 	display: inline;
 
-	margin-right: 20px;
+	margin-right: 10px;
+
+	font-weight: bold;
+	color: #176bc1;
 }
 
-#main_menu a:link,
-#main_menu a:visited
-{
-	color: white;
-	text-decoration: none;
-}
+q  { font-style: italic; }
 
-#main_menu a:link:hover,
-#main_menu a:visited:hover
-	{ text-decoration: underline; }
+li  { margin-top: 4px; }
 
-#main_menu a:focus  { outline: 1px dotted #e0e0e0; }
+p.Abstract  { font-weight: bold; }
 
-#main_menu a:link:active,
-#main_menu a:visited:active
-	{ color: #990000; }
 
 /*
  * Page body
@@ -118,29 +80,76 @@ ul#main_menu li
 #body a:visited:active
 	{ outline: 1px solid #c0c0c0; }
 
-#body li  { margin-top: 4px; }
 
-#body h1,
-#body h2,
-#body h3
+/*
+ * Page header
+ */
+
+#header  { position: relative; }
+
+#header_map
 {
-	font-weight: normal;
-	color: #176bc1;
+	position: absolute;
+	left: 0px;
+	top: 0px;
 }
 
-#body h4
+#header_title
+{
+	position: absolute;
+	top: 9px;
+	right: 15px;
+}
+
+
+/*
+ * Main menu
+ */
+
+ul#main_menu
+{
+	min-height: 19px;
+
+	margin: 0px;
+
+	padding-left: 20px;
+	padding-right: 0px;  /* list items already have a right margin */
+	padding-top: 5px;
+	padding-bottom: 5px;
+
+	background-color: #525967;
+	background-image: url(menu_background.png);
+	background-position: center;
+	background-repeat: repeat-x;
+}
+
+ul#main_menu li
 {
 	display: inline;
 
-	margin-right: 10px;
-
-	font-weight: bold;
-	color: #176bc1;
+	margin-left: 0px;
+	margin-right: 20px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
-#body strong  { color: red; }
+#main_menu a:link,
+#main_menu a:visited
+{
+	color: white;
+	text-decoration: none;
+}
 
-p.SmallPrint  { font-size: small; }
+#main_menu a:link:hover,
+#main_menu a:visited:hover
+	{ text-decoration: underline; }
+
+#main_menu a:focus  { outline: 1px dotted #e0e0e0; }
+
+#main_menu a:link:active,
+#main_menu a:visited:active
+	{ color: red; }
+
 
 /*
  * Footer

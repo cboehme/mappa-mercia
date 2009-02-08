@@ -4,12 +4,14 @@
 <head>
 	<title>Mappa Mercia</title>
 
+	<link rel="icon" type="image/png" href="/style/site-icon.png">
+
 	<link rel="stylesheet" href="/style/base.css" type="text/css">
 	<link rel="stylesheet" href="/style/map.css" type="text/css">
 	<!--[if IE 6]><style type="text/css">#sidebar  { background-image: none; }</style><![endif]-->
 
 	<script src="http://openlayers.org/api/OpenLayers.js" type="text/javascript"></script>
-	<script src="http://www.openstreetmap.org/openlayers/OpenStreetMap.js" type="text/javascript"></script>
+	<script src="/scripts/OpenStreetMap.js" type="text/javascript"></script>
 	<script src="/scripts/map.js" type="text/javascript"></script>
 	<!--[if IE 6]><script src="/scripts/ie6-fix.js" type="text/javascript"></script><![endif]-->
 	<!--[if IE 7]><script src="/scripts/ie7-fix.js" type="text/javascript"></script><![endif]-->
