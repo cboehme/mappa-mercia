@@ -10,6 +10,7 @@ body
 	background-image: url(header_background.png);
 	background-repeat: repeat-x;
 
+	color: black;
 	font-family: sans-serif;
 }
 
@@ -51,12 +52,14 @@ p.Abstract  { font-weight: bold; }
 	border: 1px solid #d0d0d0;
 
 	background-color: #fcfcfc;
+
+	color: black;
 }
 
 #body a:link,
 #body a:visited
 {
-	border-bottom: 1px dotted #d0d0d0;
+	border-bottom: 1px dotted #c0c0c0;
 	text-decoration: none;
 }
 
@@ -66,19 +69,21 @@ p.Abstract  { font-weight: bold; }
 #body a:link:hover,
 #body a:visited:hover
 {
-	border-bottom: 1px solid #f0f0f0;
+	border-bottom: 1px solid #c0c0c0;
 	color: red;
 }
 
-#body a:focus
-{
-	outline: 1px dotted #c0c0c0;
-	background-color: white;
-}
+#body a:link:focus
+#body a:visited:focus
+	{ outline: 1px dotted #c0c0c0; }
 
 #body a:link:active,
 #body a:visited:active
-	{ outline: 1px solid #c0c0c0; }
+{
+	border-bottom: 1px solid #f0f0f0;
+	outline: 1px solid #c0c0c0;
+	color: red;
+}
 
 
 /*
@@ -121,6 +126,8 @@ ul#main_menu
 	background-image: url(menu_background.png);
 	background-position: center;
 	background-repeat: repeat-x;
+
+	color: white;
 }
 
 ul#main_menu li
@@ -133,21 +140,25 @@ ul#main_menu li
 	margin-bottom: 0px;
 }
 
-#main_menu a:link,
-#main_menu a:visited
+ul#main_menu a:link,
+ul#main_menu a:visited
 {
+	background-color: transparent;
+
 	color: white;
 	text-decoration: none;
 }
 
-#main_menu a:link:hover,
-#main_menu a:visited:hover
+ul#main_menu a:link:hover,
+ul#main_menu a:visited:hover
 	{ text-decoration: underline; }
 
-#main_menu a:focus  { outline: 1px dotted #e0e0e0; }
+ul#main_menu a:link:focus
+ul#main_menu a:visited:focus
+	{ outline: 1px dotted #e0e0e0; }
 
-#main_menu a:link:active,
-#main_menu a:visited:active
+ul#main_menu a:link:active,
+ul#main_menu a:visited:active
 	{ color: red; }
 
 
@@ -183,18 +194,19 @@ ul#main_menu li
 	{ text-decoration: underline; }
 
 #footer a:link  { color: #6f6f6f; }
-
 #footer a:visited  { color: #3f3f3f; }
 
 #footer a:link:hover,
 #footer a:visited:hover
 	{ color: #9f9f9f; }
 
-#footer a:focus  { outline: 1px dotted #6f6f6f; }
+#footer a:link:focus,
+#footer a:visited:focus
+	{ outline: 1px dotted #6f6f6f; }
 
 #footer a:link:active,
 #footer a:visited:active
-	{ color: white; }
+	{ color: black; }
 
 #info_email
 {

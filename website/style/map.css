@@ -29,6 +29,69 @@ strong  { color: #990000; }
 
 
 /*
+ * Sidebar
+ */
+
+#sidebar
+{
+	position: absolute;
+
+	left: 0px;
+	top: 0px;
+	bottom: 0px;
+
+	padding-top: 20px;
+	padding-bottom: 20px;
+	
+	background-image: url(sidebar_background.png);
+	background-repeat: repeat-y;
+}
+
+.SidebarHidden
+{
+	width: 0px;
+
+	padding-left: 20px;
+	padding-right: 0px;
+
+	overflow: hidden;
+
+	background-position: 10px 0px;
+}
+
+.SidebarVisible
+{
+	width: 210px;
+
+	padding-left: 25px;
+	padding-right: 25px;
+
+	overflow: auto;
+
+	background-position: 250px 0px;
+}
+
+#sidebar_toggle
+{
+	position: absolute;
+	
+	top: 3px;
+	right: 5px;
+
+	font-size: large;
+	font-weight: bold;
+
+	cursor: pointer;
+}
+
+#sidebar_toggle:hover
+{
+	color: red;
+	cursor: pointer;
+}
+
+
+/*
  * Page header
  */
 
@@ -76,62 +139,6 @@ ul#main_menu
  * Map style
  */
 
-#sidebar
-{
-	position: absolute;
-
-	left: 0px;
-	top: 0px;
-	bottom: 0px;
-
-	padding-top: 20px;
-	padding-bottom: 20px;
-
-	overflow: hidden;
-	
-	background-image: url(sidebar_background.png);
-	background-repeat: repeat-y;
-}
-
-.SidebarHidden
-{
-	width: 0px;
-
-	padding-left: 20px;
-	padding-right: 0px;
-
-	background-position: 10px 0px;
-}
-
-.SidebarVisible
-{
-	width: 210px;
-
-	padding-left: 25px;
-	padding-right: 25px;
-
-	background-position: 250px 0px;
-}
-
-#sidebar_toggle
-{
-	position: absolute;
-	
-	top: 3px;
-	right: 5px;
-
-	font-size: large;
-	font-weight: bold;
-
-	cursor: pointer;
-}
-
-#sidebar_toggle:hover
-{
-	color: red;
-	cursor: pointer;
-}
-
 #map
 {
 	position: absolute;
@@ -152,6 +159,7 @@ img[src="http://openlayers.org/api/img/slider.png"]
 {
 	top: -6px;
 }
+
 
 /*
  * OpenStreetbugs popup style

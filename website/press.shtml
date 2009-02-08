@@ -39,7 +39,7 @@ all other online or satnav maps. Only Ordnance Survey can claim to be more
 accurate &ndash; and they have huge technical and financial resources at their
 disposal.
 </p>
-<p>(<a href="http://www.openstreetmap.org/?lat=52.4715&lon=-1.8616&zoom=12&layers=B000FTF">
+<p>(<a href="http://www.openstreetmap.org/?lat=52.4715&amp;lon=-1.8616&amp;zoom=12&amp;layers=B000FTF">
 Click here for a detailed view of Birmingham</a>)
 </p>
 <p>The OpenStreetMap of Birmingham has been created by local people, with
@@ -191,7 +191,7 @@ before publishing maps; we want everyone to know that they're free to copy, so y
 
 <p>The main Openstreetmap website has a large press section with background information about the project
 and with images suitable for press use: <a href="http://wiki.openstreetmap.org/wiki/Press">
-Openstreetmap press portal</a>.
+OpenStreetMap press portal</a>.
 </p>
 
 <p>For further information please contact <a href="mailto:press@mappa-mercia.org">

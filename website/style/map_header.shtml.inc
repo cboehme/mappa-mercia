@@ -8,7 +8,7 @@
 
 	<link rel="stylesheet" href="/style/base.css" type="text/css">
 	<link rel="stylesheet" href="/style/map.css" type="text/css">
-	<!--[if IE 6]><style type="text/css">#sidebar  { background-image: none; }</style><![endif]-->
+	<!--[if IE 6]><link rel="stylesheet" href="/style/ie6-fix.css" type="text/css"><![endif]-->
 
 	<script src="http://openlayers.org/api/OpenLayers.js" type="text/javascript"></script>
 	<script src="/scripts/OpenStreetMap.js" type="text/javascript"></script>

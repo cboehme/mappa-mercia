@@ -1,9 +1,6 @@
-- proof-reading
-
-- Check validity
-- Test with all browsers
-
-- Check/Fix Warnings in CSS
+- Scrollbars in side bar are not displayed perfectly. Sometimes
+  they obscur the sidebar toggle (Opera)
+- Opera: map window resize seem to have some problems
 - Add Closebox to popups
 - Look at coordinate transformations for osb
 - Look into the problem with the misplaced popups:
@@ -12,3 +9,6 @@
 - When getting position from the url update the position cookie
 - Fix cursor bug in Opera
 - Fix zoombar bug properly
+- IE7 and Firefox 2 show button labels with odd alignment
+- IE6 new bugs are not transparent
+- IE6 form layouts are wrong (but still useable)
