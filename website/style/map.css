@@ -122,6 +122,8 @@ ul#main_menu
 
 	font-size: large;
 	font-weight: bold;
+
+	cursor: pointer;
 }
 
 #sidebar_toggle:hover
