@@ -2,17 +2,29 @@
 
 import MySQLdb
 import cgi
+import re
 
 def main():
 	print "Content-type: text/html\n"
 	form = cgi.FieldStorage()
+
 	values = {}
-	values["id"] = form["id"].value
-	values["text"] = form["text"].value
+	values["id"] = form.getfirst("id", "")
+	values["text"] = form.getfirst("text", "")
+
+	# Check that parameters have a valid format:
+	if not re.match(r"^\d+$", values["id"]):
+		print "invalid or missing id"
+		return
+	if values["text"].strip() == "":
+		print "invalid or missing text"
+		return
 	
 	conn = MySQLdb.connect("localhost", user="osb", passwd="osb12", db="osb")
 	curs = conn.cursor()
 	curs.execute("UPDATE bugs SET type = 0, text = CONCAT(text, '<hr />', %(text)s) WHERE id = %(id)s", values)
 	conn.commit()
+
+	print "comment added"
 
 main()
