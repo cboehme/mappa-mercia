@@ -21,13 +21,15 @@ def main():
 	if not coord_exp.match(values["lon"]) or not (-180 <= float(values["lon"]) and float(values["lon"]) <= 180):
 		print "invalid or missing lon"
 		return
-	if values["text"].strip() == "":
+	if values["text"].strip() == "" or not re.match(r"^[^\x00-\x1f]*$", values["text"]):
 		print "invalid or missing text"
 		return
 
+	values["text"] = cgi.escape(values["text"], True)
+
 	conn = MySQLdb.connect("localhost", user="osb", passwd="osb12", db="osb")
 	curs = conn.cursor()
-	curs.execute("INSERT INTO bugs SET lat = %(lat)s, lon = %(lon)s, text = %(text)s, type = 0", values)
+	curs.execute("INSERT INTO bugs SET lat = %(lat)s, lon = %(lon)s, text = %(text)s, type = 0, last_changed = NOW()", values)
 	conn.commit()
 
 	print "bug added";

@@ -1,3 +1,9 @@
+OSB-Server:
+- getBugs: Handling of dateline
+- getBugs: Only return a percentage of bugs depending on the zoom level
+
+Mappa Mercia:
+- Add sitemap
 - Scrollbars in side bar are not displayed perfectly. Sometimes
   they obscur the sidebar toggle (Opera)
 - Opera: map window resize seem to have some problems

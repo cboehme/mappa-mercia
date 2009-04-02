@@ -16,13 +16,15 @@ def main():
 	if not re.match(r"^\d+$", values["id"]):
 		print "invalid or missing id"
 		return
-	if values["text"].strip() == "":
+	if values["text"].strip() == "" or not re.match(r"^[^\x00-\x1f]*$", values["text"]):
 		print "invalid or missing text"
 		return
-	
+
+	values["text"] = cgi.escape(values["text"], True)
+
 	conn = MySQLdb.connect("localhost", user="osb", passwd="osb12", db="osb")
 	curs = conn.cursor()
-	curs.execute("UPDATE bugs SET type = 0, text = CONCAT(text, '<hr />', %(text)s) WHERE id = %(id)s", values)
+	curs.execute("UPDATE bugs SET type = 0, text = CONCAT(text, '<hr />', %(text)s), last_changed = NOW() WHERE id = %(id)s and type = 0", values)
 	conn.commit()
 
 	print "comment added"
