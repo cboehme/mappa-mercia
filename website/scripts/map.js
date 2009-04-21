@@ -200,6 +200,7 @@ run_on_load(init_map);
  * http://openstreetbugs.appspot.com/ .
  */
 
+var osb_projection = new OpenLayers.Projection("EPSG:4326");
 var osb_layer = null;
 var osb_bugs = new Array();
 var state = 0;
@@ -230,14 +231,6 @@ function init_openstreetbugs(ev)
 
 	refresh_osb();
 }
-
-function plusfacteur(a) { return a * (20037508.34 / 180); }
-function moinsfacteur(a) { return a / (20037508.34 / 180); }
-function y2lat(a) { return 180/Math.PI * (2 * Math.atan(Math.exp(moinsfacteur(a)*Math.PI/180)) - Math.PI/2); }
-function lat2y(a) { return plusfacteur(180/Math.PI * Math.log(Math.tan(Math.PI/4+a*(Math.PI/180)/2))); }
-function x2lon(a) { return moinsfacteur(a); }
-function lon2x(a) { return plusfacteur(a); }
-function lonLatToMercator(ll) { return new OpenLayers.LonLat(lon2x(ll.lon), lat2y(ll.lat)); }
 
 /*
  * html contents of the popups
@@ -272,10 +265,10 @@ function popup_closed_bug(bug_or_id)
 	return description+note;
 }
 
-function popup_add_bug(x, y, nickname)
+function popup_add_bug(position, nickname)
 {
 	var intro_text = '<h1>Create an Error Report</h1><p>Please provide a short description of what\'s wrong here. You can also enter your nickname to show that you found the error.</p>';
-	var form_header = '<form><div><input type="hidden" name="lon" value="'+x2lon(x)+'"><input type="hidden" name="lat" value="'+y2lat(y)+'"></div>';
+	var form_header = '<form><div><input type="hidden" name="lon" value="'+position.lon+'"><input type="hidden" name="lat" value="'+position.lat+'"></div>';
 	var description = '<div><span class="InputLabel">Description:</span><input type="text" id="description" name="text"></div>';
 	var nickname = '<div><span class="InputLabel">Your Nickname:</span><input type="text" id="nickname" value="'+(nickname ? nickname : 'NoName')+'"></div>';
 	var form_footer = '<div class="FormFooter"><input type="button" value="OK" onclick="add_bug_submit(this.form);"><input type="button" value="Cancel" onclick="add_bug_cancel();"></div></form>';
@@ -340,10 +333,12 @@ function putAJAXMarker(id, lon, lat, text, type)
 	{
 		var bug = {id: id, text: text, lat: lat, lon: lon, type: type, feature: null};
 
+		var position = new OpenLayers.LonLat(lon, lat);
+
 		if (bug.type == 0)
-			bug.feature = create_feature(lon2x(lon), lat2y(lat), popup_open_bug(bug), type);
+			bug.feature = create_feature(position, popup_open_bug(bug), type);
 		else
-			bug.feature = create_feature(lon2x(lon), lat2y(lat), popup_closed_bug(bug), type);
+			bug.feature = create_feature(position, popup_closed_bug(bug), type);
  		
 		osb_bugs.push(bug);
 	}
@@ -420,11 +415,13 @@ function refresh_osb()
 	else
 		++refresh_osb.call_count;
 	
-	bounds = map.getExtent().toArray();
-	b = y2lat(bounds[1]);
-	t = y2lat(bounds[3]);
-	l = x2lon(bounds[0]);
-	r = x2lon(bounds[2])
+	var bounds = map.getExtent().clone();
+	bounds = bounds.transform(map.getProjectionObject(), osb_projection);
+	bounds = bounds.toArray();
+	b = bounds[1];
+	t = bounds[3];
+	l = bounds[0];
+	r = bounds[2];
 	var params = { "b": b, "t": t, "l": l, "r": r, "ucid": refresh_osb.call_count };
 	make_request("getBugs", params);
 }
@@ -452,7 +449,7 @@ function get_bug(id)
 /* This function creates a feature and adds a corresponding 
  * marker to the map.
  */
-function create_feature(x, y, popup_content, type)
+function create_feature(position, popup_content, type)
 {
 	if(!create_feature.open_bug_icon)
 	{
@@ -463,7 +460,7 @@ function create_feature(x, y, popup_content, type)
 	}
 
 	var icon = !type ? create_feature.open_bug_icon.clone() : create_feature.closed_bug_icon.clone();
-	var feature = new OpenLayers.Feature(osb_layer, new OpenLayers.LonLat(x, y), {icon: icon});
+	var feature = new OpenLayers.Feature(osb_layer, position.transform(osb_projection, map.getProjectionObject()), {icon: icon});
 	feature.popupClass = OpenLayers.Class(OpenLayers.Popup.FramedCloud);
 	feature.data.popupContentHTML = popup_content;
 
@@ -557,8 +554,8 @@ OpenLayers.Control.Click = OpenLayers.Class(OpenLayers.Control, {
 	},
 
 	click: function(ev) {
-		var lonlat = map.getLonLatFromViewPortPx(ev.xy);
-		add_bug(lonlat.lon, lonlat.lat);
+		var position = map.getLonLatFromViewPortPx(ev.xy);
+		add_bug(position.transform(map.getProjectionObject(), osb_projection));
 	},
 
 	CLASS_NAME: "OpenLayers.Control.Click"
@@ -567,14 +564,14 @@ OpenLayers.Control.Click = OpenLayers.Class(OpenLayers.Control, {
 /*
  * Actions
  */
-function add_bug(x, y)
+function add_bug(position)
 {
 	if(state == 0)
 	{
 		document.getElementById("map_OpenLayers_Container").style.cursor = "default";
 
 		state = 2;
-		current_feature = create_feature(x, y, popup_add_bug(x, y, get_cookie("osb_nickname")), 0);
+		current_feature = create_feature(position, popup_add_bug(position, get_cookie("osb_nickname")), 0);
 
 		current_feature.createPopup();
 		map.addPopup(current_feature.popup);
