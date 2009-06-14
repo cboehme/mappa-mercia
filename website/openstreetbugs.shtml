@@ -1,5 +1,6 @@
 <!--#include virtual="style/map_header.shtml.inc"-->
 
+<script type="text/javascript">standard_map();</script>
 <script type="text/javascript">openstreetbugs();</script>
 
 <h1>Report Errors</h1>

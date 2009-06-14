@@ -113,8 +113,6 @@ ul#main_menu
 {
 	position: absolute;
 
-	z-index: 3;
-
 	left: 0px;
 	top: 60px;
 	right: 0px;
@@ -156,8 +154,88 @@ ul#main_menu
  * issue. However it should not be neccessary in the first place!
  */
 img[src="http://openlayers.org/api/img/slider.png"]
+	{ top: -6px; }
+
+
+/*
+ * Public Transport map legend
+ */
+
+dl.MapKey > dt
 {
-	top: -6px;
+	display: block;
+
+	float: left;
+	clear: left;
+
+	width: 30px;
+
+	overflow: hidden;
+
+	border: 1px solid black;
+
+	margin-left: 0px;
+	margin-right: 15px;
+	margin-top: 0px;
+	margin-bottom: 5px;
+
+	padding: 0px;
+}
+
+dl.MapKey > dd
+{
+	display: block;
+
+	float: left;
+
+	margin: 0px;
+
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+.Train
+{
+	color: #ffcf00;
+	background-color: #ffcf00;
+}
+
+.SuburbanTrain
+{
+	color: #00ff00;
+	background-color: #00ff00;
+}
+
+.Tram
+{
+	color: #0000ff;
+	background-color: #0000ff;
+}
+
+.Underground
+{
+	color: #000088;
+	background-color: #000088;
+}
+
+.Bus
+{
+	color: #ff0000;
+	background-color: #ff0000;
+}
+
+.Ferry
+{
+	color: #880088;
+	background-color: #880088;
+}
+
+.RailTrack
+{
+	color: #606000;
+	background-color: #606000;
 }
 
 
@@ -281,7 +359,8 @@ img[src="http://openlayers.org/api/img/slider.png"]
 	margin-right: 10px;
 }
 
-.olFramedCloudPopupContent input[type=text]  { min-width: 190px; }
+.olFramedCloudPopupContent input[type=text]
+	{ min-width: 190px; }
 
 .olFramedCloudPopupContent input[type=button]
 {

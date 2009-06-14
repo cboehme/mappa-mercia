@@ -150,13 +150,8 @@ function save_map_location()
 	set_cookie("map_location", loc.lat+":"+loc.lon+":"+zoom);
 }
 
-function init_map(ev)
+function init_map(base_map)
 {
-	var mapnik = new OpenLayers.Layer.OSM.Mapnik("OpenStreetMap", {
-		displayOutsideMaxExtent: true,
-		wrapDateLine: true
-	});
-
 	map = new OpenLayers.Map('map', {
 		controls: [
 			new OpenLayers.Control.ArgParser(),
@@ -170,7 +165,8 @@ function init_map(ev)
 		projection: new OpenLayers.Projection("EPSG:900913"),
 		displayProjection: new OpenLayers.Projection("EPSG:4326")
 	});
-	map.addLayer(mapnik);
+
+	map.addLayer(base_map);
 	
 	// Load previous map location:
 	var loc = new OpenLayers.LonLat(-1.902, 52.477);
@@ -191,7 +187,65 @@ function init_map(ev)
 	map.events.register('moveend', map, save_map_location);
 }
 
-run_on_load(init_map);
+/*
+ * Standard Map
+ */
+function init_standard_map(ev)
+{
+	var standard_map = new OpenLayers.Layer.OSM.Mapnik("OpenStreetMap (Mapnik)", {
+		displayOutsideMaxExtent: true,
+		wrapDateLine: true
+	});
+
+	init_map(standard_map);
+}
+
+/* Call this method to add a standard map
+ */
+function standard_map()
+{
+	run_on_load(init_standard_map);
+}
+
+/*
+ * Cycle Map
+ */
+function init_cycle_map(ev)
+{
+	var cycle_map = new OpenLayers.Layer.OSM.CycleMap("OpenStreetMap (Cyclemap)", {
+		displayOutsideMaxExtent: true,
+		wrapDateLine: true
+	});
+
+	init_map(cycle_map);
+}
+
+/* Call this method to add a cycle map
+ */
+function cycle_map()
+{
+	run_on_load(init_cycle_map);
+}
+
+/*
+ * Public Transport Map
+ */
+function init_public_transport_map(ev)
+{
+	var public_transport_map = new OpenLayers.Layer.OSM("&Ouml;PNV-Karte (Public Transport Map)", "http://tile.xn--pnvkarte-m4a.de/tilegen/", {
+		numZoomLevels: 19,
+		buffer: 0
+	});
+
+	init_map(public_transport_map);
+}
+
+/* Call this method to add a public transport map
+ */
+function public_transport_map()
+{
+	run_on_load(init_public_transport_map);
+}
 
 /*
  * Openstreetbugs

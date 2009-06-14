@@ -1,0 +1,16 @@
+<!--#include virtual="style/map_header.shtml.inc"-->
+
+<script type="text/javascript">cycle_map();</script>
+
+<h1>Cycle Map</h1>
+
+<p>This map is made especially for cyclists. It highlights streets which are
+important for cyclists and shows national and local cycle routes. The map also
+features many points of interests which are important for cyclists. The contour
+lines will help you to circumvent the hills!
+</p>
+
+<p>The cycle map is created from the same data as the <a href="/standard-map.shtml">standard map</a>.
+</p>
+
+<!--#include virtual="style/map_footer.shtml.inc"-->
