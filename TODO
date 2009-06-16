@@ -3,6 +3,8 @@ OSB-Server:
 - getBugs: Only return a percentage of bugs depending on the zoom level
 
 Mappa Mercia:
+- Replace floats with inline-blocks to prevent "float without width warning"
+  (not possible because IE does not support it properly -- obviously)
 - Add sitemap
 - Scrollbars in side bar are not displayed perfectly. Sometimes
   they obscur the sidebar toggle (Opera)
@@ -15,6 +17,7 @@ Mappa Mercia:
 - When getting position from the url update the position cookie
 - Fix cursor bug in Opera
 - Fix zoombar bug properly
+- IE7 does not show the submenu very nicely
 - IE7 and Firefox 2 show button labels with odd alignment
 - IE6 new bugs are not transparent
 - IE6 form layouts are wrong (but still useable)

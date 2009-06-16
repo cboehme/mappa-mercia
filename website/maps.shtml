@@ -2,8 +2,13 @@
 
 <h1>The Maps</h1>
 
-<p>Mappa Mercia and <a href="http://www.openstreetmap.org/">OpenStreetMap</a>
-are about free geo data that you can use in whatever way you want.
+<p>Mappa Mercia is not just another free map. It is (like <a href="http://www.openstreetmap.org/">OpenStreetMap</a>) 
+about free geo data that you can use in whatever way you can imagine. Maps are just one thing you can create with it.
+</p>
+
+<p>This page shows a number of different maps for Birmingham which are available on Mappa Mercia.
+To find out about other ways to use the geo data of Birmingham have a look at the 
+<a href="/use.sthml" title="Use the Map">&quot;use the map&quot;</a> page.
 </p>
 
 <ul>
@@ -12,7 +17,7 @@ are about free geo data that you can use in whatever way you want.
 	lines, shows the routes of the National Cycle Network and lots of other information which is important 
 	for cyclists.</li>
 	<li><h4><a href="/public-transport-map.shtml">Public Transport Map</a></h4> This map is provided by
-	<a href="http://www.&ouml;pnvkarte.de/" title="&Ouml;pnv-Karte">&ouml;opvkarte.de</a>. It displays public
+	<a href="http://www.&ouml;pnvkarte.de/" title="&Ouml;pnv-Karte">&ouml;pnvkarte.de</a>. It displays public
 	transport information like bus stops and bus routes which are stored in the OpenStreetMap database.</li>
 </ul>
 
