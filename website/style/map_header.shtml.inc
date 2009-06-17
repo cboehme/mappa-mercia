@@ -8,12 +8,10 @@
 
 	<link rel="stylesheet" href="/style/base.css" type="text/css">
 	<link rel="stylesheet" href="/style/map.css" type="text/css">
-	<!--[if IE 6]><link rel="stylesheet" href="/style/ie6-fix.css" type="text/css"><![endif]-->
 
 	<script src="http://openlayers.org/api/OpenLayers.js" type="text/javascript"></script>
 	<script src="/scripts/OpenStreetMap.js" type="text/javascript"></script>
 	<script src="/scripts/map.js" type="text/javascript"></script>
-	<!--[if IE 6]><script src="/scripts/ie6-fix.js" type="text/javascript"></script><![endif]-->
 	<!--[if IE 7]><script src="/scripts/ie7-fix.js" type="text/javascript"></script><![endif]-->
 </head>
 

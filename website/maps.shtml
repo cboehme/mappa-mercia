@@ -12,13 +12,15 @@ To find out about other ways to use the geo data of Birmingham have a look at th
 </p>
 
 <ul>
-	<li><h4><a href="/standard-map.shtml">Standard Map</a></h4> An all purpose map of Birmingham.</li>
+	<li><h4><a href="/standard-map.shtml">Standard Map</a></h4> An all purpose map of Birmingham. Apart 
+	from the streets it shows the canals and many points of interest.</li>
 	<li><h4><a href="/cycle-map.shtml">Cycle Map</a></h4> This map is made for cyclists. It has contour 
 	lines, shows the routes of the National Cycle Network and lots of other information which is important 
-	for cyclists.</li>
-	<li><h4><a href="/public-transport-map.shtml">Public Transport Map</a></h4> This map is provided by
-	<a href="http://www.&ouml;pnvkarte.de/" title="&Ouml;pnv-Karte">&ouml;pnvkarte.de</a>. It displays public
-	transport information like bus stops and bus routes which are stored in the OpenStreetMap database.</li>
+	for cyclists!</li>
+	<li><h4><a href="/public-transport-map.shtml">Public Transport Map</a></h4>A map for public transport 
+	users in the West Midlands. It displays public transport information like bus stops and bus routes 
+	which are stored in the OpenStreetMap database. This map is kindly provided by
+	<a href="http://www.&ouml;pnvkarte.de/" title="&Ouml;pnv-Karte">&ouml;pnvkarte.de</a>.</li>
 </ul>
 
 <!--#include virtual="style/default_footer.shtml.inc"-->

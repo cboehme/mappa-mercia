@@ -8,8 +8,6 @@
 
 	<link rel="stylesheet" href="/style/base.css" type="text/css">
 	<link rel="stylesheet" href="/style/default.css" type="text/css">
-
-	<!--[if IE 6]><script src="/scripts/ie6-fix.js" type="text/javascript"></script><![endif]-->
 </head>
 
 <body>

@@ -19,5 +19,3 @@ Mappa Mercia:
 - Fix zoombar bug properly
 - IE7 does not show the submenu very nicely
 - IE7 and Firefox 2 show button labels with odd alignment
-- IE6 new bugs are not transparent
-- IE6 form layouts are wrong (but still useable)

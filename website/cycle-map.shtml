@@ -4,13 +4,22 @@
 
 <h1>Cycle Map</h1>
 
-<p>This map is made especially for cyclists. It highlights streets which are
-important for cyclists and shows national and local cycle routes. The map also
-features many points of interests which are important for cyclists. The contour
-lines will help you to circumvent the hills!
+<p>This map is made for cyclists. It has contour lines, shows the routes of the
+National Cycle Network and lots of other information which is important for
+cyclists!
 </p>
 
-<p>The cycle map is created from the same data as the <a href="/standard-map.shtml">standard map</a>.
+<p>Is your favourite cycle path not on the map? &ndash; Then 
+<a href="/openstreetbugs.shtml">report the error</a> so that someone who wants to 
+improve the map (<a href="/contribute.shtml">Why not you?</a>) can add it.
 </p>
+
+<h2>Map Key</h2>
+
+<dl class="MapKey">
+	<dt class="NationalCycleRoute">Red</dt><dd>National cycle route</dd>
+	<dt class="RegionalCycleRoute">Cyan</dt><dd>Regional cycle route</dd>
+	<dt class="LocalCycleRoute">Blue</dt><dd>Local cycle route</dd>
+</dl>
 
 <!--#include virtual="style/map_footer.shtml.inc"-->
