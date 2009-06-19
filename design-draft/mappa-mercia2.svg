@@ -93,6 +93,14 @@
        inkscape:vp_y="0 : 1000 : 0"
        inkscape:vp_x="0 : 526.18109 : 1"
        sodipodi:type="inkscape:persp3d" />
+    <filter
+       inkscape:collect="always"
+       id="filter4423">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.70073115"
+         id="feGaussianBlur4425" />
+    </filter>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -104,16 +112,16 @@
      objecttolerance="10"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.0924479"
-     inkscape:cx="511.99999"
-     inkscape:cy="383.99999"
+     inkscape:zoom="2.0242589"
+     inkscape:cx="794.86094"
+     inkscape:cy="696.52555"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      showguides="true"
      inkscape:guide-bbox="true"
      inkscape:window-width="1677"
-     inkscape:window-height="1007"
+     inkscape:window-height="1003"
      inkscape:window-x="1"
      inkscape:window-y="0" />
   <metadata
@@ -154,59 +162,61 @@
        sodipodi:absref="/home/christoph/map-logo2.png"
        xlink:href="map-logo2.png" />
     <g
-       id="g3385"
-       transform="translate(691.57092,-1.0503283e-2)">
+       id="g4427"
+       inkscape:export-filename="/home/christoph/projekte/mappa-mercia.org/website/style/header_title.png"
+       inkscape:export-xdpi="87.791466"
+       inkscape:export-ydpi="87.791466">
       <text
          xml:space="preserve"
-         style="font-size:42.97027969px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:0.54751132;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
-         x="13.872874"
-         y="42.365097"
+         style="font-size:42.97027968999999814px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:0.54751132000000002;stroke:none;stroke-width:0.50000000000000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans;filter:url(#filter4423)"
+         x="705.44379"
+         y="44.354595"
          id="text3183"
          sodipodi:linespacing="125%"><tspan
            sodipodi:role="line"
            id="tspan3185"
-           x="13.872874"
-           y="42.365097"
-           style="font-size:42.97027969px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:0.54751132;stroke:none;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans">mappa mercia</tspan></text>
+           x="705.44379"
+           y="44.354595"
+           style="font-size:42.97027969px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:0.54751132;stroke:none;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;font-family:Crillee;-inkscape-font-specification:Crillee Medium">mappa mercia</tspan></text>
       <text
          sodipodi:linespacing="125%"
          id="text2383"
-         y="41.365097"
-         x="12.872874"
+         y="42.373657"
+         x="703.46277"
          style="font-size:42.97027969px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
          xml:space="preserve"><tspan
-           style="font-size:42.97027969px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
-           y="41.365097"
-           x="12.872874"
+           style="font-size:42.97027969px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;font-family:Crillee;-inkscape-font-specification:Crillee Medium"
+           y="42.373657"
+           x="703.46277"
            id="tspan2385"
            sodipodi:role="line">mappa mercia</tspan></text>
     </g>
     <rect
-       style="opacity:1;color:#000000;fill:#6f7a8d;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.32332575000000002;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       style="opacity:1;color:#000000;fill:#6f7a8d;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.32332575;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="rect3391"
        width="1024"
        height="25"
        x="0"
-       y="63" />
+       y="60" />
     <text
        xml:space="preserve"
        style="font-size:19.32618332px;font-style:normal;font-weight:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
        x="101.56105"
-       y="79.667969"
+       y="78.464844"
        id="text3393"><tspan
          sodipodi:role="line"
          id="tspan3395"
          x="101.56105"
-         y="79.667969"
+         y="78.464844"
          style="font-size:16px">Map</tspan></text>
     <text
        id="text3397"
-       y="79.667969"
+       y="78.464844"
        x="156.61426"
        style="font-size:19.32618332px;font-style:normal;font-weight:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
        xml:space="preserve"><tspan
          style="font-size:16px"
-         y="79.667969"
+         y="78.464844"
          x="156.61426"
          id="tspan3399"
          sodipodi:role="line">Report Errors</tspan></text>
@@ -214,21 +224,21 @@
        xml:space="preserve"
        style="font-size:19.32618332px;font-style:normal;font-weight:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
        x="284.14401"
-       y="79.667969"
+       y="78.464844"
        id="text3401"><tspan
          sodipodi:role="line"
          id="tspan3403"
          x="284.14401"
-         y="79.667969"
+         y="78.464844"
          style="font-size:16px">Contribute!</tspan></text>
     <text
        id="text3405"
-       y="79.667969"
+       y="78.464844"
        x="32.492218"
        style="font-size:19.32618332px;font-style:normal;font-weight:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
        xml:space="preserve"><tspan
          style="font-size:16px"
-         y="79.667969"
+         y="78.464844"
          x="32.492218"
          id="tspan3407"
          sodipodi:role="line">About</tspan></text>
@@ -236,21 +246,21 @@
        xml:space="preserve"
        style="font-size:19.32618332px;font-style:normal;font-weight:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
        x="395.1347"
-       y="79.667969"
+       y="78.464844"
        id="text3409"><tspan
          sodipodi:role="line"
          id="tspan3411"
          x="395.1347"
-         y="79.667969"
+         y="78.464844"
          style="font-size:16px">Projects</tspan></text>
     <text
        id="text3413"
-       y="79.667969"
+       y="78.464844"
        x="542.00677"
        style="font-size:19.32618332px;font-style:normal;font-weight:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
        xml:space="preserve"><tspan
          style="font-size:16px"
-         y="79.667969"
+         y="78.464844"
          x="542.00677"
          sodipodi:role="line"
          id="tspan3417">Press</tspan></text>
@@ -258,23 +268,23 @@
        xml:space="preserve"
        style="font-size:19.32618332px;font-style:normal;font-weight:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
        x="606.16156"
-       y="79.667969"
+       y="78.464844"
        id="text3419"><tspan
          id="tspan3423"
          sodipodi:role="line"
          x="606.16156"
-         y="79.667969"
+         y="78.464844"
          style="font-size:16px">Contact</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:19.32618332px;font-style:normal;font-weight:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
        x="479.55508"
-       y="79.667969"
+       y="78.464844"
        id="text3441"><tspan
          id="tspan3443"
          sodipodi:role="line"
          x="479.55508"
-         y="79.667969"
+         y="78.464844"
          style="font-size:16px">Links</tspan></text>
     <rect
        style="opacity:1;color:#000000;fill:#e6e6e6;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.47732654000000002;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
