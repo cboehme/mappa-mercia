@@ -106,14 +106,14 @@
      inkscape:pageshadow="2"
      inkscape:zoom="1.0924479"
      inkscape:cx="511.99999"
-     inkscape:cy="383.99999"
+     inkscape:cy="610.80794"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:window-width="1677"
-     inkscape:window-height="1007"
+     inkscape:window-width="1277"
+     inkscape:window-height="753"
      inkscape:window-x="1"
      inkscape:window-y="0" />
   <metadata
@@ -153,34 +153,6 @@
        width="524"
        sodipodi:absref="/home/christoph/map-logo2.png"
        xlink:href="map-logo2.png" />
-    <g
-       id="g3385"
-       transform="translate(691.57092,-1.0503283e-2)">
-      <text
-         xml:space="preserve"
-         style="font-size:42.97027969px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:0.54751132;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
-         x="13.872874"
-         y="42.365097"
-         id="text3183"
-         sodipodi:linespacing="125%"><tspan
-           sodipodi:role="line"
-           id="tspan3185"
-           x="13.872874"
-           y="42.365097"
-           style="font-size:42.97027969px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:0.54751132;stroke:none;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans">mappa mercia</tspan></text>
-      <text
-         sodipodi:linespacing="125%"
-         id="text2383"
-         y="41.365097"
-         x="12.872874"
-         style="font-size:42.97027969px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
-         xml:space="preserve"><tspan
-           style="font-size:42.97027969px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
-           y="41.365097"
-           x="12.872874"
-           id="tspan2385"
-           sodipodi:role="line">mappa mercia</tspan></text>
-    </g>
     <rect
        style="opacity:1;color:#000000;fill:#6f7a8d;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.32332575000000002;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="rect3391"
@@ -308,5 +280,33 @@
          id="tspan3569"
          x="-24.715137"
          y="405.51132" /></text>
+    <g
+       id="g3385"
+       transform="translate(686.12386,3.9879774)">
+      <text
+         xml:space="preserve"
+         style="font-size:42.97027969px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:0.54751132;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+         x="13.872874"
+         y="42.365097"
+         id="text3183"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan3185"
+           x="13.872874"
+           y="42.365097"
+           style="font-size:42.97027969px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:0.54751132;stroke:none;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;font-family:Crillee;-inkscape-font-specification:Crillee Medium">mappa mercia</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text2383"
+         y="41.365097"
+         x="12.872874"
+         style="font-size:42.97027969px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           style="font-size:42.97027969px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;font-family:Crillee;-inkscape-font-specification:Crillee Medium"
+           y="41.365097"
+           x="12.872874"
+           id="tspan2385"
+           sodipodi:role="line">mappa mercia</tspan></text>
+    </g>
   </g>
 </svg>
