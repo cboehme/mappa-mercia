@@ -1,6 +1,6 @@
 <!--#include virtual="style/default_header.shtml.inc"-->
 
-<h1>Press</h1>
+<h2>Press</h2>
 
 <p>This page aims to provide information for journalists who are interested
 in Openstreetmap and Mappa Mercia.
@@ -12,13 +12,13 @@ in Openstreetmap and Mappa Mercia.
 	<li><a href="#further_information">Further information</a></li>
 </ul>
 
-<h2><a id="press_release">Press Release</a></h2>
+<h3><a id="press_release">Press Release</a></h3>
 
 <p><small><a href="/press/press-release_2009-feb.pdf">
 Click here for a pdf version of this press release.</a></small>
 </p>
 
-<h3>Another First for Birmingham!</h3>
+<h4>Another First for Birmingham!</h4>
 
 <p class="Abstract"><q>OpenStreetMap is a free editable map of the
 whole world. It is made by people like you.</q>
@@ -70,7 +70,7 @@ roads, 6,000 footpaths and 9,000 other roads in Birmingham (and over 700 bus
 stops and 300 pubs and 200 traffic lights and 300 postboxes)
 </p>
 
-<h3>Why Re-map the World?</h3>
+<h4>Why Re-map the World?</h4>
 
 <p>We need a free dataset for programmers, social activists, cartographers,
 and communities and the like to use geodata and create maps suited to their
@@ -114,7 +114,7 @@ It's built on top of OpenStreetMap, and was recently
 commended by the British Cartographic Society</a>.
 </p>
 
-<h3>So We've Got a Map, What's Next?</h3>
+<h4>So We've Got a Map, What's Next?</h4>
 
 <ol>
 	<li><strong>There's most of the Black Country to map for a start!</strong></li>
@@ -150,7 +150,7 @@ commended by the British Cartographic Society</a>.
 <p><b>Press contact:</b> Andy Robinson (Tel: 0777 553 7872, Email: <a href="mailto:press@mappa-mercia.org">press@mappa-mercia.org</a>)
 </p>
 
-<h3>More Information for Editors Can Be Found at:</h3>
+<h4>More Information for Editors Can Be Found at:</h4>
 
 <ul>
 	<li><a href="http://www.openstreetfoundation.org/">http://www.openstreetfoundation.org/</a></li>
@@ -172,7 +172,7 @@ same time protecting their commercial intellectual property i.e. you can &ldquo;
 into the software but you can't see the internal workings. [<a href="#footnote1_ref">Back</a>]
 </small></p>
 
-<h2><a id="birmingham_images">Images of the Birmingham Map</a></h2>
+<h3><a id="birmingham_images">Images of the Birmingham Map</a></h3>
 
 <ul>
 	<li><a href="/press/birmingham.png">Birmingham (3.5MB)</a></li>
@@ -187,7 +187,7 @@ into the software but you can't see the internal workings. [<a href="#footnote1_
 before publishing maps; we want everyone to know that they're free to copy, so you have to tell them when you publish.
 </small></p>
 
-<h2><a id="further_information">Further Information</a></h2>
+<h3><a id="further_information">Further Information</a></h3>
 
 <p>The main Openstreetmap website has a large press section with background information about the project
 and with images suitable for press use: <a href="http://wiki.openstreetmap.org/wiki/Press">

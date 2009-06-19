@@ -1,4 +1,4 @@
-<ul id="main_menu">
+<ul class="Navigation">
 <li><a href="/maps.shtml" accesskey="m" title="The Maps">The Maps</a>
 	<ul>
 		<li><a href="/standard-map.shtml" title="Standard Map">Standard&nbsp;Map</a></li>

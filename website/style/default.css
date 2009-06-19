@@ -17,9 +17,8 @@
 	padding-bottom: 30px;
 }
 
-
 /*
- * Page header
+ * Footer
  */
 
-#header  { height: 60px; }
+p.Copyright  { float: left; }

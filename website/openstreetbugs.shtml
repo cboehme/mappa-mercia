@@ -3,7 +3,7 @@
 <script type="text/javascript">standard_map();</script>
 <script type="text/javascript">openstreetbugs();</script>
 
-<h1>Report Errors</h1>
+<h2>Report Errors</h2>
 <p>Found something that is incorrect or missing on the map? &ndash; then report it!
 Simply click on the map where the failure is and enter a short description.
 </p>

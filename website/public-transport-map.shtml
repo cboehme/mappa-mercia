@@ -2,7 +2,7 @@
 
 <script type="text/javascript">public_transport_map();</script>
 
-<h1>Public Transport</h1>
+<h2>Public Transport</h2>
 
 <p>The map to the right shows public transport information like bus routes and 
 train lines for Birmingham. 
@@ -16,7 +16,7 @@ title="&Ouml;PNV-Karte">&ouml;pnvkarte.de</a> which creates a public transport
 map for the whole of Europe based on OpenSteetMap data.
 </p>
 
-<h2>Map Key</h2>
+<h3>Map Key</h3>
 
 <dl class="MapKey">
 	<dt class="Train">Orange</dt><dd>Train</dd>

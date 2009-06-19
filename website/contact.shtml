@@ -1,6 +1,6 @@
 <!--#include virtual="style/default_header.shtml.inc"-->
 
-<h1>Contact</h1>
+<h2>Contact</h2>
 
 <p>If you have any questions about using this map or contributing to the map do not hesitate to contact us:
 <ul>
@@ -8,7 +8,7 @@
 	<li>Press contact: Andy Robinson (<a href="mailto:press@mappa-mercia.org">press@mappa-mercia.org</a>, Tel: 0777 553 7872)</li>
 </ul>
 
-<h2>OSM Users in the Midlands</h2>
+<h3>OSM Users in the Midlands</h3>
 
 <p>Mappa Mercia is a project of the OSM users in the Midlands. Most of our communication and coordination is taking 
 place on a mailing list and on our wiki pages on the OpenStreetMap website:
@@ -18,7 +18,7 @@ place on a mailing list and on our wiki pages on the OpenStreetMap website:
 	<li><a href="http://wiki.openstreetmap.org/wiki/Mappa_Mercia">Mappa Mercia wiki page</a></li>
 </ul>
 
-<h3>Monthly Group Meetings</h3>
+<h4>Monthly Group Meetings</h4>
 
 <p>The OSM Midlands users meet on the first Thursday of the month in the
 evening (around 7pm) in a pub in Birmingham. Details about upcoming socials are

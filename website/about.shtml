@@ -1,6 +1,6 @@
 <!--#include virtual="style/default_header.shtml.inc"-->
 
-<h1>About</h1>
+<h2>About</h2>
 
 <p>Mappa Mercia is a project of the OpenStreetMap users in the West Midlands. 
 Its aim is to digitally remap the West Midlands in a free and open format.
@@ -13,7 +13,7 @@ this by creating free geographic data for everyone.
 </p>
 
 
-<h2>OpenStreetMap</h2>
+<h3>OpenStreetMap</h3>
 
 <p>What Mappa Mercia tries to do for the West Midlands OpenStreetMap does for the
 whole world: create and provide free geographic data such as street maps to
@@ -22,7 +22,7 @@ endeavour.  You can find more information about the OpenStreetMap project on
 the <a href="http://wiki.openstreetmap.org/wiki/Main_Page">OpenStreetMap
 wiki</a>.  </p>
 
-<h2>Finishing Birmingham</h2>
+<h3>Finishing Birmingham</h3>
 
 <p>The first goal of Mappa Mercia was to map all roads within the motorway ring around
 Birmingham. This target was achieved by Christmas 2008. A video of all the GPS traces
@@ -34,7 +34,7 @@ fast version</a> and <a href="http://blip.tv/file/1625734">slow version</a>.
 <a href="/contribute.shtml">welcome</a>!
 </p>
 
-<h2>What Does the Name &ldquo;Mappa Mercia&rdquo; Mean?</h2>
+<h3>What Does the Name &ldquo;Mappa Mercia&rdquo; Mean?</h3>
 
 <p>The name Mappa Mercia is derived from two historical names which are closely linked with the Midlands: 
 The <a href="http://en.wikipedia.org/wiki/Hereford_Mappa_Mundi" title="Wikipedia: Hereford Mappa Mundi">Hereford Mappa Mundi</a>  and the 

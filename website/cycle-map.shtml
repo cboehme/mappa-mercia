@@ -2,7 +2,7 @@
 
 <script type="text/javascript">cycle_map();</script>
 
-<h1>Cycle Map</h1>
+<h2>Cycle Map</h2>
 
 <p>This map is made for cyclists. It has contour lines, shows the routes of the
 National Cycle Network and lots of other information which is important for
@@ -14,7 +14,7 @@ cyclists!
 improve the map (<a href="/contribute.shtml">Why not you?</a>) can add it.
 </p>
 
-<h2>Map Key</h2>
+<hk>Map Key</h3>
 
 <dl class="MapKey">
 	<dt class="NationalCycleRoute">Red</dt><dd>National cycle route</dd>

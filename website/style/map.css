@@ -2,11 +2,13 @@
  * General style
  */
 
-h1  { font-size: x-large; }
+h2  { font-size: x-large; }
 
-h2  { font-size: large; }
+h3  { font-size: large; }
 
-h3  { font-size: medium; }
+h4  { font-size: medium; }
+
+h5  { font-size: normal; }
 
 strong  { color: #990000; }
 
@@ -92,24 +94,10 @@ strong  { color: #990000; }
 
 
 /*
- * Page header
- */
-
-#header
-{ 
-	position: absolute;
-	
-	left: 0px;
-	top: 0px;
-	right: 0px;
-}
-
-
-/*
  * Main menu
  */
 
-ul#main_menu
+ul.Navigation
 {
 	position: absolute;
 
@@ -123,12 +111,20 @@ ul#main_menu
  * Footer
  */
 
-#footer
+p.Copyright
 {
 	position: absolute;
 
 	left: 0px;
+	bottom: 0px;
+}
+
+address.Contact
+{
+	position: absolute;
+
 	right: 0px;
+	left: 0px;
 	bottom: 0px;
 }
 

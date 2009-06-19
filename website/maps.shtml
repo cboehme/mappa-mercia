@@ -1,6 +1,6 @@
 <!--#include virtual="style/default_header.shtml.inc"-->
 
-<h1>The Maps</h1>
+<h2>The Maps</h2>
 
 <p>Mappa Mercia is not just another free map. It is (like <a href="http://www.openstreetmap.org/">OpenStreetMap</a>) 
 about free geo data that you can use in whatever way you can imagine. Maps are just one thing you can create with it.
@@ -12,12 +12,12 @@ To find out about other ways to use the geo data of Birmingham have a look at th
 </p>
 
 <ul>
-	<li><h4><a href="/standard-map.shtml">Standard Map</a></h4> An all purpose map of Birmingham. Apart 
+	<li><h3><a href="/standard-map.shtml">Standard Map</a></h3> An all purpose map of Birmingham. Apart 
 	from the streets it shows the canals and many points of interest.</li>
-	<li><h4><a href="/cycle-map.shtml">Cycle Map</a></h4> This map is made for cyclists. It has contour 
+	<li><h3><a href="/cycle-map.shtml">Cycle Map</a></h3> This map is made for cyclists. It has contour 
 	lines, shows the routes of the National Cycle Network and lots of other information which is important 
 	for cyclists!</li>
-	<li><h4><a href="/public-transport-map.shtml">Public Transport Map</a></h4>A map for public transport 
+	<li><h3><a href="/public-transport-map.shtml">Public Transport Map</a></h3>A map for public transport 
 	users in the West Midlands. It displays public transport information like bus stops and bus routes 
 	which are stored in the OpenStreetMap database. This map is kindly provided by
 	<a href="http://www.&ouml;pnvkarte.de/" title="&Ouml;pnv-Karte">&ouml;pnvkarte.de</a>.</li>

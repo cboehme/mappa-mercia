@@ -1,13 +1,13 @@
 <!--#include virtual="style/default_header.shtml.inc"-->
 
-<h1>Contribute!</h1>
+<h2>Contribute!</h2>
 
 <p>All streets in Birmingham are now mapped. However, that does not mean that
 there is no work left. It is rather the opposite! There are still plenty of opportunities
 to get involved and improve the representation of <em>your</em> neighbourhood on the map.
 </p>
 
-<h2>What Can I Do?</h2>
+<h3>What Can I Do?</h3>
 
 <ul>
 	<li><h4><a href="/openstreetbugs.shtml">Report Errors!</a></h4> This is the
@@ -36,7 +36,7 @@ to get involved and improve the representation of <em>your</em> neighbourhood on
 	Have a look there to see if there is something that interests you!</li>
 </ul>
 
-<h2>Help Needed?</h2>
+<h3>Help Needed?</h3>
 
 <p>No clue how to start mapping? &ndash; No worries, there are some mappers around in Birmingham
 who are happy to help you getting started! The <a href="/contact.shtml">contact page</a> tells you

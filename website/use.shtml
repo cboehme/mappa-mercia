@@ -1,6 +1,6 @@
 <!--#include virtual="style/default_header.shtml.inc"-->
 
-<h1>Use the Map</h1>
+<h2>Use the Map</h2>
 
 <p>The Birmingham map can be used in many different ways. You can embed it into your own website or
 you can download the raw data and create your very own map of Birmingham, for example. There is 
@@ -22,7 +22,7 @@ else can do the same with anything you produce. For more information you should 
 <a href="http://wiki.openstreetmap.org/wiki/Legal_FAQ">legal FAQ</a>.</small>
 </p>
 
-<h2>Examples</h2>
+<h3>Examples</h3>
 
 <p>Here are some examples of applications that people have created with data from OpenStreetMap. Feel inspired!
 </p>
