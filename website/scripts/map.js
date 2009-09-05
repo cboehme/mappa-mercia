@@ -248,6 +248,77 @@ function public_transport_map()
 }
 
 /*
+ * Blue Plaques Map
+ */
+function init_blue_plaques_map(ev)
+{
+	var blue_plaques_map = new OpenLayers.Layer.OSM.Mapnik("OpenStreetMap (Mapnik)", {
+		displayOutsideMaxExtent: true,
+		wrapDateLine: true
+	});
+
+	init_map(blue_plaques_map);
+
+	var marker_styles = new OpenLayers.StyleMap({
+		'default': new OpenLayers.Style({
+			externalGraphic: 'style/blue_plaque_marker.png',
+			graphicWidth: 16,
+			graphicHeight: 16,
+			graphicXOffset: -8,
+			graphicYOffset: -8,
+			graphicOpacity: 1.0,
+			cursor: 'pointer'
+		})
+	});
+
+	var markers = new OpenLayers.Layer.GML("Blue Plaques", "blue-plaques.tsv", {
+		format: OpenLayers.Format.Text,
+		projection: new OpenLayers.Projection("EPSG:4326"),
+		styleMap: marker_styles,
+		formatOptions: { extractStyles: false }
+	});
+
+	map.addLayer(markers);
+
+	var selectControl = new OpenLayers.Control.SelectFeature(markers);
+	map.addControl(selectControl);
+	selectControl.activate();
+
+	markers.events.on({
+		'featureselected': function (evt) {
+			feature = evt.feature;
+			popup = new OpenLayers.Popup.FramedCloud("featurePopup",
+				feature.geometry.getBounds().getCenterLonLat(),
+				new OpenLayers.Size(100, 60),
+				"<h2>"+feature.attributes.title + "</h2>" +
+				feature.attributes.description,
+				null, false, function (evt) {
+					selectControl.unselect(this.feature);
+				});
+			feature.popup = popup;
+			popup.feature = feature;
+			map.addPopup(popup);
+		},
+		'featureunselected': function (evt) {
+			feature = evt.feature;
+			if (feature.popup) {
+				popup.feature = null;
+				map.removePopup(feature.popup);
+				feature.popup.destroy();
+				feature.popup = null;
+			}
+		}
+	});
+}
+
+/* Call this method to add a blue plaques map
+ */
+function blue_plaques_map()
+{
+	run_on_load(init_blue_plaques_map);
+}
+
+/*
  * Openstreetbugs
  *
  * This is a customized version of the Javascript from

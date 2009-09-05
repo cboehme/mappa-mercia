@@ -164,11 +164,11 @@
     <g
        id="g4427"
        inkscape:export-filename="/home/christoph/projekte/mappa-mercia.org/website/style/header_title.png"
-       inkscape:export-xdpi="87.791466"
-       inkscape:export-ydpi="87.791466">
+       inkscape:export-xdpi="87.209373"
+       inkscape:export-ydpi="87.209373">
       <text
          xml:space="preserve"
-         style="font-size:42.97027968999999814px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:0.54751132000000002;stroke:none;stroke-width:0.50000000000000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans;filter:url(#filter4423)"
+         style="font-size:42.97027969px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:0.54751132;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter4423);font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
          x="705.44379"
          y="44.354595"
          id="text3183"
@@ -177,19 +177,19 @@
            id="tspan3185"
            x="705.44379"
            y="44.354595"
-           style="font-size:42.97027969px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:0.54751132;stroke:none;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;font-family:Crillee;-inkscape-font-specification:Crillee Medium">mappa mercia</tspan></text>
+           style="font-size:42.97027969px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:0.54751132;stroke:none;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;font-family:Crillee;-inkscape-font-specification:Crillee Medium">Mappa Mercia</tspan></text>
       <text
          sodipodi:linespacing="125%"
          id="text2383"
-         y="42.373657"
+         y="42.273872"
          x="703.46277"
          style="font-size:42.97027969px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
          xml:space="preserve"><tspan
            style="font-size:42.97027969px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;font-family:Crillee;-inkscape-font-specification:Crillee Medium"
-           y="42.373657"
+           y="42.273872"
            x="703.46277"
            id="tspan2385"
-           sodipodi:role="line">mappa mercia</tspan></text>
+           sodipodi:role="line">Mappa Mercia</tspan></text>
     </g>
     <rect
        style="opacity:1;color:#000000;fill:#6f7a8d;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.32332575;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"

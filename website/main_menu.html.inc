@@ -4,6 +4,7 @@
 		<li><a href="/standard-map.shtml" title="Standard Map">Standard&nbsp;Map</a></li>
 		<li><a href="/cycle-map.shtml" title="Cycle Map">Cycle&nbsp;Map</a></li>
 		<li><a href="/public-transport-map.shtml" title="Public Transport Map">Public&nbsp;Transport&nbsp;Map</a></li>
+		<li><a href="/blue-plaques-map.shtml" title="Blue Plaques Map">Blue&nbsp;Plaques&nbsp;Map</a></li>
 	</ul>
 </li>
 <li><a href="/openstreetbugs.shtml" accesskey="r" title="Report Errors">Report Errors</a></li>

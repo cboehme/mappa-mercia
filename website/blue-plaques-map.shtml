@@ -1,0 +1,16 @@
+<!--#include virtual="style/map_header.shtml.inc"-->
+
+<script type="text/javascript">blue_plaques_map();</script>
+
+<h1>Blue Plaques Map</h1>
+
+<p>This map shows all blue plaques which are currently mapped in Birmingham. Click on the markers
+to the descriptions of the plaques.
+</p>
+
+<p>Do you know of a blue plaque that is not on the map? &ndash; Then 
+<a href="/openstreetbugs.shtml">report the error</a> so that someone who wants to 
+improve the map (<a href="/contribute.shtml">Why not you?</a>) can add it.
+</p>
+
+<!--#include virtual="style/map_footer.shtml.inc"-->
