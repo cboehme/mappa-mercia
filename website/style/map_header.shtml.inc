@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="/style/base.css" type="text/css">
 	<link rel="stylesheet" href="/style/map.css" type="text/css">
 
-	<script src="http://openlayers.org/api/OpenLayers.js" type="text/javascript"></script>
+	<script src="/scripts/OpenLayers.js" type="text/javascript"></script>
 	<script src="/scripts/OpenStreetMap.js" type="text/javascript"></script>
 	<script src="/scripts/map.js" type="text/javascript"></script>
 	<!--[if IE 7]><script src="/scripts/ie7-fix.js" type="text/javascript"></script><![endif]-->
