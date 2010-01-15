@@ -2,19 +2,21 @@
 
 <script type="text/javascript">gritting_map();</script>
 
-<h1>Welcome!</h1>
+<h1>Gritting Map</h1>
 
-<p>This is Mappa Mercia: a project to digitally remap the West Midlands in a
-free and open format.
+<p>This map shows which roads in Birmingham are
+gritted when it is cold and frosty.
 </p>
 
-<p>The map you see here was created by volunteers and it is free for everyone
-to use and to edit. Mappa Mercia is part of <a href="http://www.openstreetmap.org/">
-OpenStreetMap</a>. OpenStreetMap is dedicated to allow you to view, edit and use geographical 
-data in a collaborative way from anywhere on Earth.
-</p>
+<p>At the moment only data from Birmingham City Council have been entered 
+into <a href="http://www.openstreetmap.org/">OpenStreetMap</a></p>
 
-<p><a href="/contribute.shtml">Get involved and contribute to the map!</a></p>
-<p><a href="/use.shtml">Learn what you can do with this map</a></p>
+<h2>Map Key</h2>
+
+<dl class="MapKey">
+	<dt class="GrittingHighPriority">Red</dt><dd>High Priority</dd>
+	<dt class="GrittingMediumPriority">Dark&nbsp;Blue</dt><dd>Medium Priority</dd>
+	<dt class="GrittingLowPriority">Light&nbsp;Blue</dt><dd>Low Priority</dd>
+</dl>
 
 <!--#include virtual="style/map_footer.shtml.inc"-->

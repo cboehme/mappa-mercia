@@ -153,7 +153,8 @@ ul#main_menu
  * in a displacement of the slider on the zoombar. Setting top to -6px solves this
  * issue. However it should not be neccessary in the first place!
  */
-img[src="http://openlayers.org/api/img/slider.png"]
+img[src="http://openlayers.org/api/img/slider.png"],
+img[src="/scripts/img/slider.png"]
 	{ top: -6px; }
 
 
@@ -255,6 +256,24 @@ dl.MapKey > dd
 {
 	color: #0000ff;
 	background-color: #0000ff;
+}
+
+.GrittingHighPriority
+{
+	color: #ff0000;
+	background-color: #ff0000;
+}
+
+.GrittingMediumPriority
+{
+	color: #0000ff;
+	background-color: #0000ff;
+}
+
+.GrittingLowPriority
+{
+	color: #9999ff;
+	background-color: #9999ff;
 }
 
 /*

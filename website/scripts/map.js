@@ -135,11 +135,14 @@ run_on_load(init_sidebar);
  * Map
  */
 
+var epsg4326 = new OpenLayers.Projection("EPSG:4326");
+var epsg900913 = new OpenLayers.Projection("EPSG:900913");
+
 var map = null;
 
 function save_map_location()
 {
-	var loc = map.getCenter().clone().transform(map.getProjectionObject(), new OpenLayers.Projection("EPSG:4326"));
+	var loc = map.getCenter().clone().transform(epsg900913, epsg4326);
 	var zoom = map.getZoom();
 
 	var decimals = Math.pow(10, Math.floor(zoom/3));
@@ -159,11 +162,9 @@ function init_map(base_map)
 			new OpenLayers.Control.PanZoomBar(),
 			new OpenLayers.Control.ScaleLine()
 		],
-		maxResolution: 156543.0339,
-		numZoomLevels: 20,
 		units: 'm',
-		projection: new OpenLayers.Projection("EPSG:900913"),
-		displayProjection: new OpenLayers.Projection("EPSG:4326")
+		projection: epsg900913,
+		displayProjection: epsg4326
 	});
 
 	map.addLayer(base_map);
@@ -179,10 +180,13 @@ function init_map(base_map)
 		loc.lon = Number(v[1]);
 		zoom = Number(v[2]);
 	}
+	if(zoom > map.numZoomLevels) {
+		zoom = map.numZoomLevels;
+	}
 	// Only set the location if no position provided in 
 	// the url (which is handled by the ArgParser control:
 	if(location.search == "")
-		map.setCenter(loc.clone().transform(new OpenLayers.Projection("EPSG:4326"), map.getProjectionObject()), zoom);
+		map.setCenter(loc.clone().transform(epsg4326, epsg900913), zoom);
 
 	map.events.register('moveend', map, save_map_location);
 }
@@ -193,8 +197,7 @@ function init_map(base_map)
 function init_standard_map(ev)
 {
 	var standard_map = new OpenLayers.Layer.OSM.Mapnik("OpenStreetMap (Mapnik)", {
-		displayOutsideMaxExtent: true,
-		wrapDateLine: true
+		displayOutsideMaxExtent: true
 	});
 
 	init_map(standard_map);
@@ -213,8 +216,7 @@ function standard_map()
 function init_cycle_map(ev)
 {
 	var cycle_map = new OpenLayers.Layer.OSM.CycleMap("OpenStreetMap (Cyclemap)", {
-		displayOutsideMaxExtent: true,
-		wrapDateLine: true
+		displayOutsideMaxExtent: true
 	});
 
 	init_map(cycle_map);
@@ -233,6 +235,7 @@ function cycle_map()
 function init_public_transport_map(ev)
 {
 	var public_transport_map = new OpenLayers.Layer.OSM("&Ouml;PNV-Karte (Public Transport Map)", "http://tile.xn--pnvkarte-m4a.de/tilegen/", {
+		displayOutsideMaxExtent: true,
 		numZoomLevels: 19,
 		buffer: 0
 	});
@@ -254,16 +257,22 @@ function init_gritting_map(ev)
 {
 	var gritting_map = new OpenLayers.Layer.OSM.Mapnik("OpenStreetMap (Mapnik)", {
 		displayOutsideMaxExtent: true,
-		wrapDateLine: true
+		numZoomLevels: 17  // The overlay only renders up to level 16.
 	});
-	gritting_map.setOpacity(0.5);
+	gritting_map.setOpacity(0.6);
 
 	init_map(gritting_map);
 
+	// Bounds on the main map are necessary in order for 
+	// the overlay to work:
+	var bounds = new OpenLayers.Bounds(-2.287, 52.314, -1.638, 52.678);
+	bounds = bounds.transform(epsg4326, epsg900913);
+	map.maxExtent = bounds;
+
 	var gritting_routes = new OpenLayers.Layer.XYZ(
-		'Gritting Routes', 'tiles/${z}/${x}/${y}.png', {
-		'isBaseLayer': false,
-		'sphericalMercator': true
+		"Gritting Routes", "/tiles/${z}/${x}/${y}.png", {
+		"isBaseLayer": false,
+		"sphericalMercator": true
 	});
 	gritting_routes.setOpacity(0.7);
 
@@ -283,8 +292,7 @@ function gritting_map()
 function init_blue_plaques_map(ev)
 {
 	var blue_plaques_map = new OpenLayers.Layer.OSM.Mapnik("OpenStreetMap (Mapnik)", {
-		displayOutsideMaxExtent: true,
-		wrapDateLine: true
+		displayOutsideMaxExtent: true
 	});
 
 	init_map(blue_plaques_map);
@@ -355,7 +363,7 @@ function blue_plaques_map()
  * http://openstreetbugs.appspot.com/ .
  */
 
-var osb_projection = new OpenLayers.Projection("EPSG:4326");
+var osb_projection = epsg4326;
 var osb_layer = null;
 var osb_bugs = new Array();
 var state = 0;

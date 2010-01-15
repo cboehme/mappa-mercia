@@ -17,12 +17,14 @@ To find out about other ways to use the geo data of Birmingham have a look at th
 	<li><h4><a href="/cycle-map.shtml">Cycle Map</a></h4> This map is made for cyclists. It has contour 
 	lines, shows the routes of the National Cycle Network and lots of other information which is important 
 	for cyclists!</li>
-	<li><h4><a href="/public-transport-map.shtml">Public Transport Map</a></h4>A map for public transport 
+	<li><h4><a href="/public-transport-map.shtml">Public Transport Map</a></h4> A map for public transport 
 	users in the West Midlands. It displays public transport information like bus stops and bus routes 
 	which are stored in the OpenStreetMap database. This map is kindly provided by
 	<a href="http://www.&ouml;pnvkarte.de/" title="&Ouml;pnv-Karte">&ouml;pnvkarte.de</a>.</li>
 	<li><h4><a href="/blue-plaques-map.shtml">Blue Plaques Map</a></h4> Birmingham has many blue plaques
 	to commemorate famous inhabitants. This map shows the blue plaques which have been mapped already.</li>
+	<li><h4><a href="/gritting-map.shtml">Gritting Map</a></h4> This map shows which roads in Birmingham are
+	gritted when it is cold and frosty.</li>
 </ul>
 
 <!--#include virtual="style/default_footer.shtml.inc"-->
