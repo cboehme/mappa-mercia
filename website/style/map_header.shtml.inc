@@ -6,8 +6,11 @@
 
 	<link rel="icon" type="image/png" href="/style/site-icon.png">
 
-	<link rel="stylesheet" href="/style/base.css" type="text/css">
-	<link rel="stylesheet" href="/style/map.css" type="text/css">
+	<!-- link rel="stylesheet" href="/style/base.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="/style/map.css" type="text/css" media="screen" -->
+
+	<link rel="stylesheet" href="/style/print-base.css" type="text/css" media="print,screen">
+	<link rel="stylesheet" href="/style/print-map.css" type="text/css" media="print,screen"> 
 
 	<script src="/scripts/OpenLayers.js" type="text/javascript"></script>
 	<script src="/scripts/OpenStreetMap.js" type="text/javascript"></script>

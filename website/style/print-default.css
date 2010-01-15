@@ -1,0 +1,23 @@
+/*
+ * Page options
+ */
+
+@page  { size: portrait; }
+
+
+/*
+ * Page body
+ */
+
+#body
+{
+	margin-left: 0mm;
+	margin-right: 0mm;
+	margin-top: 5mm;
+	margin-bottom: 5mm;
+
+	padding-left: 1.5cm;
+	padding-right: 1.5cm;
+	padding-top: 7mm;
+	padding-bottom: 1cm;
+}
