@@ -248,6 +248,36 @@ function public_transport_map()
 }
 
 /*
+ * Gritting Map
+ */
+function init_gritting_map(ev)
+{
+	var gritting_map = new OpenLayers.Layer.OSM.Mapnik("OpenStreetMap (Mapnik)", {
+		displayOutsideMaxExtent: true,
+		wrapDateLine: true
+	});
+	gritting_map.setOpacity(0.5);
+
+	init_map(gritting_map);
+
+	var gritting_routes = new OpenLayers.Layer.XYZ(
+		'Gritting Routes', 'tiles/${z}/${x}/${y}.png', {
+		'isBaseLayer': false,
+		'sphericalMercator': true
+	});
+	gritting_routes.setOpacity(0.7);
+
+	map.addLayer(gritting_routes);
+}
+
+/* Call this method to add a gritting map
+ */
+function gritting_map()
+{
+	run_on_load(init_gritting_map);
+}
+
+/*
  * Blue Plaques Map
  */
 function init_blue_plaques_map(ev)
