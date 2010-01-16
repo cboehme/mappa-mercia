@@ -270,7 +270,7 @@ function init_gritting_map(ev)
 	map.maxExtent = bounds;
 
 	var gritting_routes = new OpenLayers.Layer.XYZ(
-		"Gritting Routes", "/tiles/${z}/${x}/${y}.png", {
+		"Gritting Routes", "/tiles/gritting-overlay/${z}/${x}/${y}.png", {
 		"isBaseLayer": false,
 		"sphericalMercator": true
 	});
