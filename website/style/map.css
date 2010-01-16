@@ -276,6 +276,13 @@ dl.MapKey > dd
 	background-color: #9999ff;
 }
 
+.GritBin
+{
+	vertical-align: middle;
+	text-align: center;
+	border-color: transparent !important;
+}
+
 /*
  * OpenStreetbugs popup style
  */

@@ -14,6 +14,7 @@ gritted when it is cold and frosty.
 	<dt class="GrittingHighPriority">Red</dt><dd>High Priority</dd>
 	<dt class="GrittingMediumPriority">Dark&nbsp;Blue</dt><dd>Medium Priority</dd>
 	<dt class="GrittingLowPriority">Light&nbsp;Blue</dt><dd>Low Priority</dd>
+	<dt class="GritBin"><img src="/style/grit-bin.png" width="16" height="16" alt="Grit Bin Icon"></dt><dd>Grit Bin</dd>
 </dl>
 
 <!--#include virtual="style/map_footer.shtml.inc"-->
