@@ -160,7 +160,8 @@ function init_map(base_map)
 			new OpenLayers.Control.ArgParser(),
 			new OpenLayers.Control.Navigation(),
 			new OpenLayers.Control.PanZoomBar(),
-			new OpenLayers.Control.ScaleLine()
+			new OpenLayers.Control.ScaleLine(),
+			new OpenLayers.Control.Permalink()
 		],
 		units: 'm',
 		projection: epsg900913,
