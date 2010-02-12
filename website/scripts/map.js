@@ -266,7 +266,7 @@ function init_gritting_map(ev)
 
 	// Bounds on the main map are necessary in order for 
 	// the overlay to work:
-	var bounds = new OpenLayers.Bounds(-2.287, 52.314, -1.638, 52.678);
+	var bounds = new OpenLayers.Bounds(-2.287, 52.314, -1.591, 52.678);
 	bounds = bounds.transform(epsg4326, epsg900913);
 	map.maxExtent = bounds;
 
