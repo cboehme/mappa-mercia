@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
+
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -13,7 +14,7 @@
    height="768"
    id="svg2"
    sodipodi:version="0.32"
-   inkscape:version="0.46"
+   inkscape:version="0.47 r22583"
    version="1.0"
    sodipodi:docname="mappa-mercia2.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape">
@@ -101,6 +102,76 @@
          stdDeviation="0.70073115"
          id="feGaussianBlur4425" />
     </filter>
+    <inkscape:perspective
+       id="perspective2919"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2919-5"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2955"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2955-0"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2955-2"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2955-1"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3007"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3038"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3831"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4006"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -112,18 +183,19 @@
      objecttolerance="10"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.0242589"
-     inkscape:cx="794.86094"
-     inkscape:cy="696.52555"
+     inkscape:zoom="0.98697917"
+     inkscape:cx="478.40009"
+     inkscape:cy="384"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:window-width="1677"
-     inkscape:window-height="1003"
-     inkscape:window-x="1"
-     inkscape:window-y="0" />
+     inkscape:window-width="1676"
+     inkscape:window-height="996"
+     inkscape:window-x="3"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -140,12 +212,12 @@
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="color:#000000;fill:#fafafa;fill-opacity:1;fill-rule:evenodd;stroke:#d9d9d9;stroke-width:0.63355261;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       style="color:#000000;fill:#fafafa;fill-opacity:1;fill-rule:evenodd;stroke:#d9d9d9;stroke-width:0.63355261;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="rect3507"
        width="679.36646"
        height="654.36646"
        x="172.31677"
-       y="93.316765" />
+       y="94.329956" />
     <rect
        style="opacity:1;color:#000000;fill:url(#linearGradient3181);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.01900005;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:1.019, 1.019;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="rect2389"
@@ -154,13 +226,13 @@
        x="0"
        y="0" />
     <image
-       y="0"
-       x="0"
-       id="image3381"
-       height="60"
+       sodipodi:absref="/home/christoph/projekte/mappa-mercia.org/design-draft/map-logo2.png"
+       xlink:href="map-logo2.png"
        width="524"
-       sodipodi:absref="/home/christoph/map-logo2.png"
-       xlink:href="map-logo2.png" />
+       height="60"
+       id="image3381"
+       x="0"
+       y="0" />
     <g
        id="g4427"
        inkscape:export-filename="/home/christoph/projekte/mappa-mercia.org/website/style/header_title.png"
@@ -305,28 +377,172 @@
          y="405.51132" /></text>
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;fill:#176bc1;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
-       x="229.15137"
-       y="159.78307"
-       id="text3573"><tspan
-         sodipodi:role="line"
-         id="tspan3575"
-         x="229.15137"
-         y="159.78307">About</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
        x="228.80176"
-       y="193.00597"
+       y="139.00597"
        id="text3597"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          x="228.80176"
-         y="193.00597"
-         id="tspan3607">Mappa Mercia are a group of people aiming to digitally remap the West Midlands in a free and </tspan><tspan
+         y="139.00597"
+         id="tspan3607">Mappa Mercia are a group of people aiming to digitally remap</tspan><tspan
          sodipodi:role="line"
          x="228.80176"
-         y="208.00597"
-         id="tspan3617">open format. Our group is part of a world-wide movement called openstreetmap.</tspan></text>
+         y="154.00597"
+         id="tspan3848">the West Midlands in a free and open format. Our group is part </tspan><tspan
+         sodipodi:role="line"
+         x="228.80176"
+         y="169.00597"
+         id="tspan2905">of a world-wide movement called OpenStreetMap.</tspan><tspan
+         sodipodi:role="line"
+         x="228.80176"
+         y="184.00597"
+         id="tspan4019" /><tspan
+         sodipodi:role="line"
+         x="228.80176"
+         y="199.00597"
+         id="tspan4023">Who are we? | Get Involved | Use the maps</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#176bc1;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans Bold"
+       x="648.91815"
+       y="127.97888"
+       id="text2907"><tspan
+         sodipodi:role="line"
+         id="tspan2909"
+         x="648.91815"
+         y="127.97888">The Maps</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#176bc1;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans Bold"
+       x="648.16229"
+       y="249.25162"
+       id="text2907-8"><tspan
+         sodipodi:role="line"
+         id="tspan2909-4"
+         x="648.16229"
+         y="249.25162">Upcoming Events</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#176bc1;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans Bold"
+       x="648.16229"
+       y="402.36505"
+       id="text2907-0"><tspan
+         sodipodi:role="line"
+         id="tspan2909-3"
+         x="648.16229"
+         y="402.36505">Latest Updates</tspan></text>
+    <text
+       id="text3024"
+       y="271.78308"
+       x="225.15137"
+       style="font-size:40px;font-style:normal;font-weight:normal;fill:#176bc1;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         y="271.78308"
+         x="225.15137"
+         id="tspan3026"
+         sodipodi:role="line">Blog</tspan></text>
+    <path
+       style="color:#000000;fill:none;stroke:#a4a4a4;stroke-width:0.63355261;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 633.24538,607.06069 0,-493.42481"
+       id="path3028"
+       sodipodi:nodetypes="cc" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text3856"
+       y="148.15109"
+       x="662.28986"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         id="tspan3862"
+         y="148.15109"
+         x="662.28986"
+         sodipodi:role="line">Street Map</tspan><tspan
+         y="163.15109"
+         x="662.28986"
+         sodipodi:role="line"
+         id="tspan3869">Cycle Map</tspan><tspan
+         y="178.15109"
+         x="662.28986"
+         sodipodi:role="line"
+         id="tspan3875">Public Transport Map</tspan><tspan
+         y="193.15109"
+         x="662.28986"
+         sodipodi:role="line"
+         id="tspan3871">Gritting Routes</tspan><tspan
+         y="208.15109"
+         x="662.28986"
+         sodipodi:role="line"
+         id="tspan3873">Blue Plaques Map</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+       x="662.28986"
+       y="270.15109"
+       id="text3877"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="662.28986"
+         y="270.15109"
+         id="tspan3903">Monthly Social Meeting</tspan><tspan
+         sodipodi:role="line"
+         x="662.28986"
+         y="285.15109"
+         id="tspan3907">4 March 2010 from 7pm</tspan><tspan
+         sodipodi:role="line"
+         x="662.28986"
+         y="300.15109"
+         id="tspan3909">in the City Taverne</tspan><tspan
+         sodipodi:role="line"
+         x="662.28986"
+         y="315.15109"
+         id="tspan3911" /><tspan
+         sodipodi:role="line"
+         x="662.28986"
+         y="330.15109"
+         id="tspan3913">Mapping Party</tspan><tspan
+         sodipodi:role="line"
+         x="662.28986"
+         y="345.15109"
+         id="tspan3915">12 April 2010, 10am</tspan><tspan
+         sodipodi:role="line"
+         x="662.28986"
+         y="360.15109"
+         id="tspan3917">Dudley</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3939"
+       y="422.15109"
+       x="662.28986"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         id="tspan3953"
+         y="422.15109"
+         x="662.28986"
+         sodipodi:role="line">Blackadder updated the map</tspan><tspan
+         y="437.15109"
+         x="662.28986"
+         sodipodi:role="line"
+         id="tspan3982">&quot;Added cycle routes&quot;</tspan><tspan
+         y="452.15109"
+         x="662.28986"
+         sodipodi:role="line"
+         id="tspan3984" /><tspan
+         y="467.15109"
+         x="662.28986"
+         sodipodi:role="line"
+         id="tspan3986">Xoff update the map:</tspan><tspan
+         y="482.15109"
+         x="662.28986"
+         sodipodi:role="line"
+         id="tspan3988">&quot;Small fixes&quot;</tspan><tspan
+         y="497.15109"
+         x="662.28986"
+         sodipodi:role="line"
+         id="tspan3990" /><tspan
+         y="512.15112"
+         x="662.28986"
+         sodipodi:role="line"
+         id="tspan3992">Brian wrote a new blog post</tspan></text>
   </g>
 </svg>
