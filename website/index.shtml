@@ -1,1 +1,51 @@
-standard-map.shtml
+<!--#include virtual="style/default_header.shtml.inc"-->
+
+<div style="float: right; width: 200px; height: auto; border-left: 1px solid #d0d0d0; padding: 5px 20px; margin: 0px -40px 0px 20px; font-size: 80%;">
+	<h3>The Maps</h3>
+	<ul>
+		<li>Standard Map</li>
+		<li>Cycling Map</li>
+		<li>Public Transport Map</li>
+		<li>Gritting Routes</li>
+		<li>Blue Plaques</li>
+	</ul>
+
+	<h3>Upcoming Events</h3>
+	<ol>
+		<li>Monthly Social Meeting<br>
+		4 March 2010 from 7pm<br>
+		City Taverne, Birmingham
+		</li>
+		<li>Mappy Party<br>
+		12 April 2010 10am<br>
+		Dudley
+		</li>
+	</ol>
+
+	<h3>Latest Updates</h3>
+	<ol>
+		<li>Brian updated the map:<br>
+		<i>Added bus stops</i>
+		</li>
+		<li>Blackadder updated the map:<br>
+		<i>Resurveyed cycle route</i>
+		</li>
+		<li>Andy posted on the blog:<br>
+		<i>OSM at the Social Media Surgery</i>
+		</li>
+	</ol>
+</div>
+
+<p>Mappa Mercia is a project of the OpenStreetMap users in the West Midlands. 
+Its aim is to digitally remap the West Midlands in a free and open format.<br>
+[<a href="about.shtml">learn more</a>]
+</p>
+
+<h1>Blog</h1>
+
+<p> Here will the blog entries be displayed.
+</p>
+
+<div style="clear: both;"></div>
+
+<!--#include virtual="style/default_footer.shtml.inc"-->
