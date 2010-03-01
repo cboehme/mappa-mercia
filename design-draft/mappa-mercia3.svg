@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1052.3622"
+   height="744.09448"
+   id="svg2837"
+   version="1.1"
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="mappa-merica3.svg">
+  <defs
+     id="defs2839">
+    <linearGradient
+       id="linearGradient3751">
+      <stop
+         id="stop3753"
+         offset="0"
+         style="stop-color:#888a85;stop-opacity:1" />
+      <stop
+         id="stop3755"
+         offset="1"
+         style="stop-color:#ffffff;stop-opacity:1;" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3723">
+      <stop
+         style="stop-color:#fce94f;stop-opacity:1;"
+         offset="0"
+         id="stop3725" />
+      <stop
+         style="stop-color:#fce94f;stop-opacity:0;"
+         offset="1"
+         id="stop3727" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4054">
+      <stop
+         style="stop-color:#fce94f;stop-opacity:1"
+         offset="0"
+         id="stop4056" />
+      <stop
+         id="stop4064"
+         offset="0.21016113"
+         style="stop-color:#fce94f;stop-opacity:1" />
+      <stop
+         id="stop4062"
+         offset="0.28064454"
+         style="stop-color:#c4a000;stop-opacity:1" />
+      <stop
+         style="stop-color:#c4a000;stop-opacity:1"
+         offset="1"
+         id="stop4058" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3866">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop3868" />
+      <stop
+         id="stop3882"
+         offset="0.12390184"
+         style="stop-color:#ffffff;stop-opacity:1;" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="0.43172011"
+         id="stop3884" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop3870" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3846">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop3848" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0"
+         offset="1"
+         id="stop3850" />
+    </linearGradient>
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective2845" />
+    <inkscape:perspective
+       id="perspective3840"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3846"
+       id="radialGradient3852"
+       cx="550.16229"
+       cy="72.080994"
+       fx="550.16229"
+       fy="72.080994"
+       r="524.88025"
+       gradientTransform="matrix(-0.00262045,0.48215693,-0.63608526,-0.00346229,597.45362,-197.4433)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3846"
+       id="linearGradient3858"
+       x1="488.26901"
+       y1="-192.42732"
+       x2="488.26901"
+       y2="306.89438"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3866"
+       id="linearGradient3872"
+       x1="492.39523"
+       y1="-228.31734"
+       x2="492.39523"
+       y2="-460.76495"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.93996143,0,0,0.34911242,28.442221,469.2383)" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3878">
+      <rect
+         y="308.58447"
+         x="0.31677631"
+         height="743.46094"
+         width="1051.7286"
+         id="rect3880"
+         style="color:#000000;fill:none;stroke:#000000;stroke-width:0.63355261;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    </clipPath>
+    <filter
+       inkscape:collect="always"
+       id="filter4301"
+       x="-0.072846552"
+       width="1.1456931"
+       y="-0.33928748"
+       height="1.678575">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="7.7595242"
+         id="feGaussianBlur4303" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter4331"
+       x="-0.093414448"
+       width="1.1868289"
+       y="-0.16773783"
+       height="1.3354757">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="6.4206911"
+         id="feGaussianBlur4333" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3751"
+       id="linearGradient3731"
+       x1="997.57446"
+       y1="376.436"
+       x2="997.7533"
+       y2="403.43173"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.85696721,0,0,0.85902403,142.23594,54.532051)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3723"
+       id="linearGradient3749"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.2355596,0,0,1.2362679,-345.82564,-92.086406)"
+       x1="1018.1102"
+       y1="403.52734"
+       x2="1018.1102"
+       y2="349.44019" />
+    <filter
+       inkscape:collect="always"
+       id="filter6330"
+       x="-0.13843671"
+       width="1.2768734"
+       y="-0.10589688"
+       height="1.2117938">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.83146"
+         id="feGaussianBlur6332" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter6340"
+       x="-0.093414448"
+       width="1.1868289"
+       y="-0.16773783"
+       height="1.3354757">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="6.4206911"
+         id="feGaussianBlur6342" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.93805292"
+     inkscape:cx="546.81087"
+     inkscape:cy="372.04724"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1436"
+     inkscape:window-height="932"
+     inkscape:window-x="86"
+     inkscape:window-y="11"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata2842">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-308.2677)">
+    <rect
+       style="color:#000000;fill:#93b5da;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.63355261;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3689"
+       width="1052.1854"
+       height="24.723763"
+       x="0"
+       y="1027.6384" />
+    <image
+       y="-280.46347"
+       x="0"
+       id="image3842"
+       height="669.40204"
+       width="1052.3622"
+       xlink:href="file:///home/christoph/projekte/mappa-mercia.org/trunk/design-draft/mainmap.png"
+       style="fill:url(#linearGradient3858);fill-opacity:1"
+       clip-path="url(#clipPath3878)" />
+    <rect
+       style="color:#000000;fill:url(#linearGradient3872);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.63355261;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3864"
+       width="1052.3622"
+       height="81.148933"
+       x="0"
+       y="308.38092" />
+    <text
+       sodipodi:linespacing="110%"
+       id="text6334"
+       y="380.37482"
+       x="117.79691"
+       style="font-size:44.4168396px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:110%;writing-mode:lr;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:#ffffff;font-family:Bitstream Vera Serif;-inkscape-font-specification:Bitstream Vera Serif;stroke-opacity:1;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter6340);opacity:0.69999999999999996"
+       xml:space="preserve"><tspan
+         y="380.37482"
+         x="117.79691"
+         id="tspan6336"
+         sodipodi:role="line">Mappa</tspan><tspan
+         id="tspan6338"
+         y="429.23334"
+         x="117.79691"
+         sodipodi:role="line">Mercia</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44.4168396px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:110%;writing-mode:lr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Serif;-inkscape-font-specification:Bitstream Vera Serif"
+       x="117.79691"
+       y="380.37482"
+       id="text2847"
+       sodipodi:linespacing="110%"><tspan
+         sodipodi:role="line"
+         id="tspan2849"
+         x="117.79691"
+         y="380.37482">Mappa</tspan><tspan
+         sodipodi:role="line"
+         x="117.79691"
+         y="429.23334"
+         id="tspan2851">Mercia</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:justify;line-height:110.00000238%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+       x="58.558392"
+       y="526.62939"
+       id="text3627"
+       sodipodi:linespacing="110%"><tspan
+         sodipodi:role="line"
+         id="tspan3629"
+         x="58.558392"
+         y="526.62939">Contribute!</tspan></text>
+    <text
+       sodipodi:linespacing="110%"
+       id="text3631"
+       y="483.64798"
+       x="51.0872"
+       style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:justify;line-height:110.00000238%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         y="483.64798"
+         x="51.0872"
+         id="tspan3633"
+         sodipodi:role="line">Use the Map</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:justify;line-height:110.00000238%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+       x="52.349407"
+       y="569.61084"
+       id="text3649"
+       sodipodi:linespacing="110%"><tspan
+         sodipodi:role="line"
+         id="tspan3651"
+         x="52.349407"
+         y="569.61084">Get in Touch</tspan></text>
+    <text
+       sodipodi:linespacing="110%"
+       id="text3653"
+       y="612.59222"
+       x="87.911423"
+       style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:justify;line-height:110.00000238%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         y="612.59222"
+         x="87.911423"
+         id="tspan3655"
+         sodipodi:role="line">About</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:justify;line-height:110.00000238%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+       x="90.758102"
+       y="655.57367"
+       id="text3657"
+       sodipodi:linespacing="110%"><tspan
+         sodipodi:role="line"
+         id="tspan3659"
+         x="90.758102"
+         y="655.57367">Press</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:justify;line-height:110.00000238%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Serif;-inkscape-font-specification:Bitstream Vera Serif"
+       x="287.96466"
+       y="454.94421"
+       id="text3663"
+       sodipodi:linespacing="110%"><tspan
+         sodipodi:role="line"
+         x="287.96466"
+         y="454.94421"
+         id="tspan3667">We are mapping the Midlands</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 750.97151,394.91826 0,548.78687"
+       id="path3671" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 23.381897,138.91598 189.805983,0"
+       id="path3673"
+       transform="translate(0,308.2677)" />
+    <text
+       xml:space="preserve"
+       style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:justify;line-height:110.00000238%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Serif;-inkscape-font-specification:Bitstream Vera Serif"
+       x="781.44464"
+       y="522.63806"
+       id="text3677"
+       sodipodi:linespacing="110%"><tspan
+         sodipodi:role="line"
+         id="tspan3679"
+         x="781.44464"
+         y="522.63806">Upcoming Events</tspan></text>
+    <text
+       sodipodi:linespacing="110%"
+       id="text3685"
+       y="722.63806"
+       x="781.26202"
+       style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:justify;line-height:110.00000238%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Serif;-inkscape-font-specification:Bitstream Vera Serif"
+       xml:space="preserve"><tspan
+         y="722.63806"
+         x="781.26202"
+         id="tspan3687"
+         sodipodi:role="line">Latest Updates</tspan></text>
+    <rect
+       style="color:#000000;fill:none;stroke:#000000;stroke-width:0.63355261;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3874"
+       width="1051.7286"
+       height="743.46094"
+       x="0.31677631"
+       y="308.58447" />
+    <text
+       xml:space="preserve"
+       style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:justify;line-height:110.00000238%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+       x="310.73209"
+       y="241.58244"
+       id="text4339"
+       sodipodi:linespacing="110%"
+       transform="translate(0,308.2677)"><tspan
+         sodipodi:role="line"
+         id="tspan4341"
+         x="310.73209"
+         y="241.58244" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:justify;line-height:110.00000238%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+       x="307.0907"
+       y="495.22928"
+       id="text4343"
+       sodipodi:linespacing="110%"><tspan
+         sodipodi:role="line"
+         id="tspan4345"
+         x="307.0907"
+         y="495.22928">Mappa Mercia is a project of the OpenStreetMap </tspan><tspan
+         sodipodi:role="line"
+         x="307.0907"
+         y="510.62927"
+         id="tspan4347">users in the West Midlands. Its aim is to digitally </tspan><tspan
+         sodipodi:role="line"
+         x="307.0907"
+         y="526.0293"
+         id="tspan4349">remap the West Midlands in a free and open format.</tspan></text>
+    <text
+       sodipodi:linespacing="110%"
+       id="text4365"
+       y="626.94421"
+       x="287.96466"
+       style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:justify;line-height:110.00000238%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Serif;-inkscape-font-specification:Bitstream Vera Serif"
+       xml:space="preserve"><tspan
+         id="tspan4367"
+         y="626.94421"
+         x="287.96466"
+         sodipodi:role="line">Bla bla Blog Entry</tspan></text>
+    <text
+       sodipodi:linespacing="110%"
+       id="text4369"
+       y="667.22925"
+       x="307.0907"
+       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:justify;line-height:110.00000238%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         y="667.22925"
+         x="307.0907"
+         id="tspan4371"
+         sodipodi:role="line">Mappa Mercia is a project of the OpenStreetMap </tspan><tspan
+         id="tspan4373"
+         y="682.62927"
+         x="307.0907"
+         sodipodi:role="line">users in the West Midlands. Its aim is to digitally </tspan><tspan
+         id="tspan4375"
+         y="698.02924"
+         x="307.0907"
+         sodipodi:role="line">remap the West Midlands in a free and open format.</tspan></text>
+    <path
+       style="fill:#babdb6;stroke:#888a85;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 284.50035,548.41568 101.37397,0"
+       id="path4379" />
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:justify;line-height:110.00000238%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+       x="792.18201"
+       y="553.55994"
+       id="text4381"
+       sodipodi:linespacing="110%"><tspan
+         sodipodi:role="line"
+         x="792.18201"
+         y="553.55994"
+         id="tspan4387">1. Monthly Social Evening</tspan><tspan
+         sodipodi:role="line"
+         x="792.18201"
+         y="568.95996"
+         id="tspan4394">4 March 2010, from 7pm</tspan><tspan
+         sodipodi:role="line"
+         x="792.18201"
+         y="584.35992"
+         id="tspan4406">City Taverne, </tspan><tspan
+         sodipodi:role="line"
+         x="792.18201"
+         y="599.75995"
+         id="tspan4412">Birmingham [...]</tspan><tspan
+         sodipodi:role="line"
+         x="792.18201"
+         y="615.15991"
+         id="tspan4398" /><tspan
+         sodipodi:role="line"
+         x="792.18201"
+         y="630.55994"
+         id="tspan4400">2. Mapping Party</tspan><tspan
+         sodipodi:role="line"
+         x="792.18201"
+         y="645.95996"
+         id="tspan4402">12 April 2010, 10am</tspan><tspan
+         sodipodi:role="line"
+         x="792.18201"
+         y="661.35992"
+         id="tspan4408">Dudley [...]</tspan></text>
+    <text
+       sodipodi:linespacing="110%"
+       id="text4416"
+       y="753.83649"
+       x="792.18201"
+       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:justify;line-height:110.00000238%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         id="tspan4432"
+         y="753.83649"
+         x="792.18201"
+         sodipodi:role="line">1 March 2010, 10pm</tspan><tspan
+         y="769.23651"
+         x="792.18201"
+         sodipodi:role="line"
+         id="tspan4469">Brian updated the map:</tspan><tspan
+         y="784.63647"
+         x="792.18201"
+         sodipodi:role="line"
+         id="tspan4471"
+         style="font-style:italic;-inkscape-font-specification:Bitstream Vera Sans Oblique">Added bus stops</tspan><tspan
+         y="800.0365"
+         x="792.18201"
+         sodipodi:role="line"
+         id="tspan4473" /><tspan
+         y="815.43646"
+         x="792.18201"
+         sodipodi:role="line"
+         id="tspan4475">1 March 2010, 6pm</tspan><tspan
+         y="830.83649"
+         x="792.18201"
+         sodipodi:role="line"
+         id="tspan4477">Blackadder update the map:</tspan><tspan
+         y="846.23651"
+         x="792.18201"
+         sodipodi:role="line"
+         id="tspan4479"
+         style="font-style:italic;-inkscape-font-specification:Bitstream Vera Sans Oblique">Resurveyed cycle route 5</tspan><tspan
+         y="861.63647"
+         x="792.18201"
+         sodipodi:role="line"
+         id="tspan4481" /><tspan
+         y="877.0365"
+         x="792.18201"
+         sodipodi:role="line"
+         id="tspan4483">28 February 2010, 11am</tspan><tspan
+         y="892.43646"
+         x="792.18201"
+         sodipodi:role="line"
+         id="tspan4485">Andy wrote on the blog:</tspan><tspan
+         y="907.83649"
+         x="792.18201"
+         sodipodi:role="line"
+         id="tspan4487"
+         style="font-style:italic;-inkscape-font-specification:Bitstream Vera Sans Oblique">Gritting route success</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18.98273849px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:justify;line-height:110.00000238%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+       x="857.23914"
+       y="394.97141"
+       id="text3795"
+       sodipodi:linespacing="110%"><tspan
+         sodipodi:role="line"
+         x="857.23914"
+         y="394.97141"
+         id="tspan3797">Show the Map</tspan></text>
+    <path
+       style="opacity:0.7;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:10;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter6330);enable-background:accumulate"
+       d="m 1014.9008,355.57264 0,27.4672 -6.0132,-6.03705 -5.8857,5.91493 12.8895,12.9349 c 0.8154,0.81856 1.8789,1.22717 2.9428,1.22717 0.028,5.6e-4 0.058,0 0.087,0 0.038,-5.6e-4 0.073,7.1e-4 0.1095,0 1.0268,-0.0274 2.0459,-0.4372 2.8328,-1.22717 l 12.8894,-12.9349 -5.8915,-5.91493 -5.6365,5.65902 0,-27.08917 -8.3242,0 z"
+       id="path6328"
+       sodipodi:nodetypes="cccccssscccccc" />
+    <path
+       sodipodi:nodetypes="cccccssscccccc"
+       id="path3820"
+       d="m 1014.9008,355.57264 0,27.4672 -6.0132,-6.03705 -5.8857,5.91493 12.8895,12.9349 c 0.8154,0.81856 1.8789,1.22717 2.9428,1.22717 0.028,5.6e-4 0.058,0 0.087,0 0.038,-5.6e-4 0.073,7.1e-4 0.1095,0 1.0268,-0.0274 2.0459,-0.4372 2.8328,-1.22717 l 12.8894,-12.9349 -5.8915,-5.91493 -5.6365,5.65902 0,-27.08917 -8.3242,0 z"
+       style="color:#000000;fill:#a40000;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <text
+       xml:space="preserve"
+       style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:justify;line-height:110.00000238%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+       x="10.660381"
+       y="1043.8339"
+       id="text6344"
+       sodipodi:linespacing="110%"><tspan
+         sodipodi:role="line"
+         id="tspan6346"
+         x="10.660381"
+         y="1043.8339"
+         style="font-size:12px">Map data by OpenStreetMap &amp; Contributors (CC-BY-SA); All other content available under CC-BY-SA</tspan></text>
+  </g>
+</svg>
