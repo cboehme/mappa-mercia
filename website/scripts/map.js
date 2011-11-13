@@ -266,7 +266,7 @@ function init_gritting_map(ev)
 
 	// Bounds on the main map are necessary in order for 
 	// the overlay to work:
-	var bounds = new OpenLayers.Bounds(-2.287, 52.314, -1.591, 52.678);
+	var bounds = new OpenLayers.Bounds(-2.275, 52.314, -1.378, 52.679);
 	bounds = bounds.transform(epsg4326, epsg900913);
 	map.maxExtent = bounds;
 
@@ -355,6 +355,25 @@ function init_blue_plaques_map(ev)
 function blue_plaques_map()
 {
 	run_on_load(init_blue_plaques_map);
+}
+
+/*
+ * Historic Ordnance Survey Map
+ */
+function init_os25k_map(ev)
+{
+	var os25k_map = new OpenLayers.Layer.OSM.Mapnik("OpenStreetMap (Mapnik)", {
+		displayOutsideMaxExtent: true
+	});
+
+	init_map(os25k_map);
+}
+
+/* Call this method to add a history Ordnance Survey map
+ */
+function os25k_map()
+{
+	run_on_load(init_os25k_map);
 }
 
 /*
