@@ -171,9 +171,9 @@ OpenLayers.Layer.OSM.CycleMap = OpenLayers.Class(OpenLayers.Layer.OSM, {
      */
     initialize: function(name, options) {
         var url = [
-            "http://a.andy.sandbox.cloudmade.com/tiles/cycle/",
-            "http://b.andy.sandbox.cloudmade.com/tiles/cycle/",
-            "http://c.andy.sandbox.cloudmade.com/tiles/cycle/"
+            "http://a.tile.opencyclemap.org/cycle/",
+            "http://b.tile.opencyclemap.org/cycle/",
+            "http://c.tile.opencyclemap.org/cycle/"
         ];
         options = OpenLayers.Util.extend({ numZoomLevels: 19 }, options);
         var newArguments = [name, url, options];
