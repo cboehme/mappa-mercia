@@ -14,7 +14,7 @@ Mappa Mercia is a project to grow [OpenStreetMap](http://openstreetmap.org/) in 
  - _mongoose_ contains a copy of the [Mongoose web server](https://code.google.com/archive/p/mongoose/) 
    which can be used during development to handle the server-side includes in
    the webpages
- - _osb-proxy_ is a simply openstreetbugs implementation for testing. Requires a
+ - _osb-proxy_ is a simple openstreetbugs implementation for testing. Requires a
    MySQL database
  - The _osm2text.xsl_ creates a list of blue plaques for the memorial map
  - _serve.sh_ starts the Mongoose webserver
